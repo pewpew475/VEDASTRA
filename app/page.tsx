@@ -1075,10 +1075,10 @@ export default function Home() {
           </div>
         </section>
 
-      <section className="gemstones-section">
+      <section className="relative py-[110px] pb-[120px] overflow-hidden max-[768px]:py-16 max-[768px]:pb-[72px]">
           {/* Sacred geometry background */}
-          <div className="gem-bg " aria-hidden="true">
-            <svg className="gem-sacred-geo" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden" aria-hidden="true">
+            <svg className="absolute top-1/2 left-1/2 w-[min(820px,100vw)] h-auto -translate-x-1/2 -translate-y-1/2 opacity-80" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
               <polygon points="400,80 680,560 120,560" stroke="rgba(228,175,86,0.10)" strokeWidth="1" fill="none"/>
               <polygon points="400,720 120,240 680,240" stroke="rgba(228,175,86,0.10)" strokeWidth="1" fill="none"/>
               <polygon points="400,140 630,520 170,520" stroke="rgba(228,175,86,0.07)" strokeWidth="1" fill="none"/>
@@ -1086,7 +1086,7 @@ export default function Home() {
               <circle cx="400" cy="400" r="280" stroke="rgba(228,175,86,0.06)" strokeWidth="1" fill="none"/>
               <circle cx="400" cy="400" r="180" stroke="rgba(228,175,86,0.04)" strokeWidth="1" fill="none"/>
             </svg>
-            <svg className="gem-zodiac-wheel" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="absolute top-1/2 right-[-8%] w-[min(520px,60vw)] h-auto -translate-y-1/2 opacity-60 [animation:slowSpin_80s_linear_infinite] max-[768px]:[animation:none] max-[768px]:right-[-20%] max-[768px]:w-[70vw] max-[768px]:opacity-30" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="300" cy="300" r="270" stroke="rgba(168, 85, 247, 0.15)" strokeWidth="1" fill="none" strokeDasharray="4 8"/>
               <circle cx="300" cy="300" r="240" stroke="rgba(236, 72, 153, 0.1)" strokeWidth="1" fill="none"/>
               {Array.from({length:12}).map((_,i)=>{
@@ -1107,14 +1107,14 @@ export default function Home() {
             </svg>
 
             {/* Lush Wavy silver grey lines - 80 paths for dense shimmery effect */}
-            <svg className="gem-wavy-lines" viewBox="0 0 1000 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="absolute top-0 left-[-5%] w-[110%] h-full opacity-35 max-[768px]:opacity-20" viewBox="0 0 1000 800" fill="none" xmlns="http://www.w3.org/2000/svg">
               {Array.from({length: 20}).map((_, i) => {
                 const xOffset = 250 + (i * 35); // Re-spaced for 20 lines
                 const waveAmp = 55 + (i % 10) * 6; // Rhythmic sinusoidal amplitude
                 return (
-                  <path 
+                  <path
                     key={i}
-                    d={`M ${xOffset} 0 
+                    d={`M ${xOffset} 0
                        C ${xOffset + waveAmp} 200, ${xOffset - waveAmp} 400, ${xOffset} 600
                        S ${xOffset + waveAmp} 800, ${xOffset} 1000`}
                     stroke={`rgba(168, 85, 247, ${0.15 + (i % 8) * 0.05})`}
@@ -1126,41 +1126,49 @@ export default function Home() {
             </svg>
           </div>
 
-          <div className="section-shell gem-two-col">
+          <div className="section-shell relative z-1 grid grid-cols-2 gap-[72px] items-center min-[769px]:max-[1064px]:gap-10 max-[768px]:grid-cols-1 max-[768px]:gap-10">
             {/* LEFT: Copy Column */}
-            <div className="gem-copy-col">
+            <div className="flex flex-col gap-0 max-[768px]:order-2 max-[768px]:items-center max-[768px]:text-center">
               <p className="section-kicker">Certified Gemstone Marketplace</p>
-              <h2 className="section-title gem-headline">Authentic Gemstones for Planetary Balance</h2>
-              <p className="section-body gem-desc">
+              <h2 className="section-title !mb-5 max-w-[480px] max-[768px]:!max-w-full max-[768px]:text-center">Authentic Gemstones for Planetary Balance</h2>
+              <p className="section-body !mb-7 max-w-[460px] max-[768px]:!max-w-full max-[768px]:text-center">
                 Gemstones play a significant role in Vedic astrology. VedAstraa
                 offers 100% natural and certified gemstones recommended by
                 experts based on your birth chart.
               </p>
-              <ul className="gem-feature-list">
+              <ul className="list-none p-0 m-0 mb-9 flex flex-col gap-[13px] max-[768px]:items-start max-[768px]:w-fit max-[768px]:mx-auto">
                 {[
                   {icon:"⬡", label:"Lab-certified gemstones"},
                   {icon:"✦", label:"Personalized gemstone recommendations"},
                   {icon:"◈", label:"Customized rings and pendants"},
                   {icon:"❋", label:"Authenticity certificates"},
                 ].map(f=>(
-                  <li key={f.label} className="gem-feature-item">
-                    <span className="gem-feature-icon" aria-hidden="true">{f.icon}</span>
+                  <li key={f.label} className="flex items-center gap-3 text-[0.88rem] text-[rgba(225,210,175,0.82)] leading-[1.4]">
+                    <span className="inline-flex items-center justify-center w-[30px] h-[30px] rounded-lg bg-[rgba(212,175,55,0.08)] border border-[rgba(212,175,55,0.22)] text-[#d4af37] text-[0.82rem] shrink-0 shadow-[0_0_8px_rgba(212,175,55,0.1)] [backdrop-filter:blur(4px)]" aria-hidden="true">{f.icon}</span>
                     <span>{f.label}</span>
                   </li>
                 ))}
               </ul>
-              <a href="#" className="btn btn-primary gem-cta">
+              <a href="#" className="btn btn-primary self-start max-[768px]:self-stretch max-[768px]:text-center max-[768px]:justify-center max-[768px]:w-full">
                 Shop Gemstones
               </a>
             </div>
 
             {/* RIGHT: Big B&W image panel */}
-            <div className="gem-image-panel" aria-label="Gemstone astrology visual">
-              <div className="gem-image-frame">
-                <img src="/gemstone-bg.png" alt="Luxury gemstones on Vedic astrology chart" className="gem-bg-img"/>
-              
+            <div className="relative max-[768px]:order-1" aria-label="Gemstone astrology visual">
+              <div className="group relative rounded-[22px] overflow-hidden aspect-4/3 border border-[rgba(212,175,55,0.18)]
+                  shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_4px_24px_rgba(0,0,0,0.55),0_20px_60px_rgba(0,0,0,0.45),0_0_80px_rgba(212,175,55,0.06),inset_0_1px_0_rgba(255,255,255,0.06)]
+                  after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[65%] after:[background:linear-gradient(to_top,rgba(8,5,22,0.92)_0%,rgba(8,5,22,0.55)_50%,transparent_100%)] after:z-3 after:pointer-events-none after:rounded-[inherit]
+                  max-[768px]:aspect-3/2 max-[768px]:rounded-2xl max-[420px]:aspect-square">
+                <img
+                  src="/gemstone-bg.png"
+                  alt="Luxury gemstones on Vedic astrology chart"
+                  className="w-full h-full object-cover object-center block [filter:grayscale(30%)_brightness(0.75)_contrast(1.05)] transition-[filter,transform] duration-[600ms] ease-[ease,ease]
+                    group-hover:[filter:grayscale(10%)_brightness(0.85)_contrast(1.05)] group-hover:scale-[1.03] max-[768px]:group-hover:scale-100 max-[768px]:group-hover:[filter:grayscale(30%)_brightness(0.75)_contrast(1.05)]"
+                />
+
                 {/* Gold sacred geometry SVG overlay on image */}
-                <svg className="gem-img-overlay-svg " viewBox="0 0 600 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <svg className="absolute inset-0 w-full h-full pointer-events-none z-2" viewBox="0 0 600 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <circle cx="300" cy="210" r="160" stroke="rgba(228,175,86,0.22)" strokeWidth="1" strokeDasharray="5 10"/>
                   <circle cx="300" cy="210" r="110" stroke="rgba(228,175,86,0.15)" strokeWidth="1" strokeDasharray="3 7"/>
                   <polygon points="300,60 480,330 120,330" stroke="rgba(228,175,86,0.18)" strokeWidth="1" fill="none"/>
@@ -1180,33 +1188,34 @@ export default function Home() {
                 </svg>
 
                 {/* Top certified badge */}
-                <div className="gem-img-badge">
-                  <span>✦</span> Certified &amp; Authentic
+                <div className="absolute top-4 left-4 z-5 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[0.66rem] font-bold tracking-[0.14em] uppercase text-[#e8d5a3] bg-[rgba(20,14,50,0.72)] border border-[rgba(212,175,55,0.38)]
+                    [backdrop-filter:blur(10px)_saturate(1.3)] shadow-[0_2px_12px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(212,175,55,0.1)] max-[768px]:text-[0.6rem] max-[768px]:px-[11px] max-[768px]:py-[5px]">
+                  <span className="text-[#d4af37] text-[0.7rem]">✦</span> Certified &amp; Authentic
                 </div>
 
                 {/* Bottom: 3 gemstone label cards */}
-                <div className="gem-img-chips">
-                  <div className="gem-chip gem-chip-ruby">
-                    <span className="gem-chip-symbol">☉</span>
-                    <div>
-                      <strong>Ruby</strong>
-                      <em>Sun · Manik</em>
+                <div className="absolute bottom-[18px] left-4 right-4 z-5 flex gap-2.5 max-[768px]:gap-[7px] max-[768px]:bottom-3 max-[768px]:left-3 max-[768px]:right-3 max-[420px]:flex-col max-[420px]:gap-1.5 max-[420px]:max-h-[42%] max-[420px]:bottom-2.5">
+                  {[
+                    { key: "ruby", symbol: "☉", name: "Ruby", sub: "Sun · Manik", chipCls: "border-[rgba(220,60,60,0.3)] hover:border-[rgba(220,60,60,0.55)] hover:shadow-[0_4px_18px_rgba(220,60,60,0.2),0_2px_12px_rgba(0,0,0,0.45)]", symbolCls: "text-[#f87171] [text-shadow:0_0_10px_rgba(248,113,113,0.6)]" },
+                    { key: "emerald", symbol: "☿", name: "Emerald", sub: "Mercury · Panna", chipCls: "border-[rgba(52,168,100,0.3)] hover:border-[rgba(52,168,100,0.55)] hover:shadow-[0_4px_18px_rgba(52,168,100,0.2),0_2px_12px_rgba(0,0,0,0.45)]", symbolCls: "text-[#4ade80] [text-shadow:0_0_10px_rgba(74,222,128,0.5)]" },
+                    { key: "sapphire", symbol: "♄", name: "Blue Sapphire", sub: "Saturn · Neelam", chipCls: "border-[rgba(96,130,230,0.3)] hover:border-[rgba(96,130,230,0.55)] hover:shadow-[0_4px_18px_rgba(96,130,230,0.2),0_2px_12px_rgba(0,0,0,0.45)]", symbolCls: "text-[#93c5fd] [text-shadow:0_0_10px_rgba(147,197,253,0.5)]" },
+                  ].map((gem) => (
+                    <div
+                      key={gem.key}
+                      className={`flex-1 flex items-center gap-[9px] px-3 py-2.5 rounded-xl bg-[rgba(12,8,32,0.78)] border [backdrop-filter:blur(12px)_saturate(1.4)]
+                        shadow-[0_2px_12px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.05)] cursor-default
+                        transition-[border-color,transform,box-shadow] duration-300 ease-[ease,cubic-bezier(0.23,1,0.32,1),ease]
+                        hover:-translate-y-0.5
+                        max-[768px]:min-w-0 max-[768px]:px-2 max-[768px]:py-2 max-[768px]:gap-1.5 max-[768px]:rounded-[10px] max-[768px]:hover:translate-y-0
+                        max-[420px]:flex-none max-[420px]:w-full ${gem.chipCls}`}
+                    >
+                      <span className={`text-[1.15rem] leading-none shrink-0 max-[768px]:text-[1rem] ${gem.symbolCls}`}>{gem.symbol}</span>
+                      <div>
+                        <strong className="block text-[0.78rem] font-bold text-[#f0e6d0] leading-[1.2] whitespace-nowrap min-[769px]:max-[1064px]:text-[0.72rem] max-[768px]:text-[0.7rem]">{gem.name}</strong>
+                        <em className="block text-[0.62rem] not-italic text-[rgba(210,195,165,0.58)] tracking-[0.04em] whitespace-nowrap min-[769px]:max-[1064px]:hidden max-[768px]:hidden max-[420px]:!block">{gem.sub}</em>
+                      </div>
                     </div>
-                  </div>
-                  <div className="gem-chip gem-chip-emerald">
-                    <span className="gem-chip-symbol">☿</span>
-                    <div>
-                      <strong>Emerald</strong>
-                      <em>Mercury · Panna</em>
-                    </div>
-                  </div>
-                  <div className="gem-chip gem-chip-sapphire">
-                    <span className="gem-chip-symbol">♄</span>
-                    <div>
-                      <strong>Blue Sapphire</strong>
-                      <em>Saturn · Neelam</em>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>

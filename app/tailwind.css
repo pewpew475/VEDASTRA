@@ -110,6 +110,11 @@
   to   { transform: translate(12px, -8px) scale(1.03); }
 }
 
+@keyframes slowSpin {
+  from { transform: translateY(-50%) rotate(0deg); }
+  to   { transform: translateY(-50%) rotate(360deg); }
+}
+
 @keyframes skiper-exit {
   from {
     transform: rotateY(0deg) scale(1);
