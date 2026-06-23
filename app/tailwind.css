@@ -70,3 +70,23 @@
   0%, 100% { opacity: 0.4; }
   50% { opacity: 0.75; }
 }
+
+/* Swiper renders pagination bullets into the DOM itself — no JSX element to className. */
+.how-swiper .swiper-pagination {
+  bottom: 0;
+}
+
+.how-swiper .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.how-swiper .swiper-pagination-bullet-active {
+  background: var(--color-gold);
+  opacity: 1;
+  width: 1.5rem;
+  border-radius: 3px;
+}

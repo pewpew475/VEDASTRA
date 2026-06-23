@@ -1379,34 +1379,34 @@ export default function Home() {
           </div>
         </section>
 
-      <section className="how-section">
-        <div className="section-shell">
-          <p className="section-kicker">How VedAstraa Works</p>
-          <h2 className="section-title">A Clear Path to Spiritual Guidance</h2>
+      <section className="bg-[rgba(44,11,59,0.185)] py-16 lg:py-24">
+        <div className="relative z-2 max-w-[1280px] mx-auto px-5 lg:px-8">
+          <p className="block mb-3 [font-family:var(--font-inter)] text-xs font-semibold tracking-[0.16em] uppercase text-gold">How VedAstraa Works</p>
+          <h2 className="m-0 [font-family:var(--font-playfair)] text-[clamp(1.875rem,5vw,2.25rem)] font-normal leading-[1.2] tracking-[-0.03em] max-w-[22ch] [background-image:linear-gradient(to_right,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c)] bg-clip-text text-transparent [text-shadow:0_8px_30px_rgba(11,31,59,0.35)]">A Clear Path to Spiritual Guidance</h2>
 
           {/* ── MOBILE: Swiper Carousel ── */}
-          <div className="how-carousel-mobile">
+          <div className="block lg:hidden mt-10">
             <Swiper
               modules={[Pagination]}
               spaceBetween={16}
               slidesPerView={1.12}
               grabCursor={true}
               pagination={{ clickable: true }}
-              className="how-swiper"
+              className="how-swiper pb-11 overflow-visible"
             >
               {howItWorksSteps.map((item) => (
                 <SwiperSlide key={item.step}>
-                  <article className="how-card">
+                  <article className="relative h-[28rem] rounded-2xl overflow-hidden isolate">
                     <div
-                      className="how-card-bg bw"
+                      className="absolute inset-0 z-0 bg-cover bg-center"
                       style={{ backgroundImage: `url(${item.image})` }}
                       aria-hidden="true"
                     />
-                    <div className="how-card-shade" aria-hidden="true" />
-                    <div className="how-card-content">
-                      <span className="how-step-badge">{item.step}</span>
-                      <h3>{item.title}</h3>
-                      <p>{item.description}</p>
+                    <div className="absolute inset-0 z-1 [background:linear-gradient(180deg,transparent_0%,rgba(4,4,4,0.5)_50%,rgba(4,4,4,0.92)_100%)]" aria-hidden="true" />
+                    <div className="absolute inset-x-0 bottom-0 z-2 p-6 flex flex-col gap-2">
+                      <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-gold text-cosmos-dark [font-family:var(--font-inter)] text-xs font-bold tracking-[0.1em]">{item.step}</span>
+                      <h3 className="[font-family:var(--font-playfair)] text-lg font-semibold text-cream leading-[1.2] tracking-[-0.01em]">{item.title}</h3>
+                      <p className="[font-family:var(--font-inter)] text-sm leading-[1.6] text-white/60">{item.description}</p>
                     </div>
                   </article>
                 </SwiperSlide>
@@ -1415,24 +1415,29 @@ export default function Home() {
           </div>
 
           {/* ── DESKTOP: Premium Grid ── */}
-          <div className="how-grid">
-            {howItWorksSteps.map((item, index) => (
+          <div className="hidden lg:grid lg:grid-cols-4 gap-5 mt-14">
+            {howItWorksSteps.map((item) => (
               <article
                 key={item.step}
-                className="how-card"
-                style={{ '--i': index } as React.CSSProperties}
+                className="group relative min-h-[26rem] rounded-xl overflow-hidden isolate flex flex-col justify-end cursor-pointer transition-transform duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-[5px]
+                  before:content-[''] before:absolute before:inset-0 before:rounded-[inherit] before:p-px before:z-[4] before:pointer-events-none before:transition-opacity before:duration-[400ms]
+                  before:[background:linear-gradient(160deg,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.02)_40%,rgba(255,255,255,0.08)_100%)]
+                  before:[mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[mask-composite:exclude] before:[-webkit-mask-composite:xor]
+                  after:content-[''] after:absolute after:-inset-px after:rounded-[inherit] after:p-px after:z-[4] after:pointer-events-none after:opacity-0 after:transition-opacity after:duration-[400ms] hover:after:opacity-100
+                  after:[background:radial-gradient(600px_circle_at_50%_50%,rgba(228,175,86,0.45),transparent_40%)]
+                  after:[mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] after:[mask-composite:exclude] after:[-webkit-mask-composite:xor]"
               >
                 <div
-                  className="how-card-bg bw"
+                  className="absolute inset-0 z-0 bg-cover bg-center [filter:grayscale(100%)_brightness(0.55)] transition-[filter,transform] duration-[700ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:[filter:grayscale(0%)_brightness(0.45)] group-hover:scale-[1.06]"
                   style={{ backgroundImage: `url(${item.image})` }}
                   aria-hidden="true"
                 />
-                <div className="how-card-shade" aria-hidden="true" />
-                <div className="how-card-glow" aria-hidden="true" />
-                <div className="how-card-content">
-                  <span className="how-step-badge">{item.step}</span>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
+                <div className="absolute inset-0 z-1 transition-[background] duration-500 [background:linear-gradient(180deg,rgba(4,4,4,0.2)_0%,rgba(4,4,4,0.55)_50%,rgba(4,4,4,0.95)_100%)] group-hover:[background:linear-gradient(180deg,rgba(4,4,4,0.1)_0%,rgba(4,4,4,0.45)_55%,rgba(4,4,4,0.92)_100%)]" />
+                <div className="absolute inset-8 z-[-1] opacity-0 blur-[24px] transition-opacity duration-[600ms] [background:radial-gradient(circle_at_50%_100%,rgba(168,85,247,0.4),transparent_70%)] group-hover:opacity-60" aria-hidden="true" />
+                <div className="relative z-[3] p-7 flex flex-col gap-[0.625rem]">
+                  <span className="mb-1 inline-flex items-center justify-center w-8 h-8 rounded-full bg-gold text-cosmos-dark [font-family:var(--font-inter)] text-xs font-bold tracking-[0.1em]">{item.step}</span>
+                  <h3 className="[font-family:var(--font-playfair)] text-xl font-semibold text-cream leading-[1.2] tracking-[-0.02em]">{item.title}</h3>
+                  <p className="[font-family:var(--font-inter)] text-sm leading-[1.6] text-white/50 max-w-full">{item.description}</p>
                 </div>
               </article>
             ))}
@@ -1440,50 +1445,50 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="cta-section">
-        <div className="cta-container">
+      <section className="relative py-20 px-5 max-[768px]:py-14 max-[768px]:px-4 max-[480px]:py-12 max-[480px]:px-3 overflow-hidden isolate [background:linear-gradient(135deg,rgba(168,85,247,0.05)_0%,rgba(236,72,153,0.03)_50%,rgba(168,85,247,0.02)_100%)]">
+        <div className="relative max-w-[720px] mx-auto z-2">
           {/* Accent elements */}
-          <div className="cta-accent-top" aria-hidden="true" />
-          <div className="cta-accent-bottom" aria-hidden="true" />
+          <div className="absolute -top-[100px] -right-[150px] w-[400px] h-[400px] rounded-full blur-[40px] pointer-events-none z-0 [background:radial-gradient(circle,rgba(168,85,247,0.12)_0%,transparent_70%)] max-[768px]:top-[-80px] max-[768px]:right-[-120px] max-[768px]:w-[300px] max-[768px]:h-[300px] max-[480px]:opacity-50 max-[480px]:top-[-60px] max-[480px]:right-[-100px] max-[480px]:w-[250px] max-[480px]:h-[250px]" aria-hidden="true" />
+          <div className="absolute -bottom-[80px] -left-[200px] w-[350px] h-[350px] rounded-full blur-[40px] pointer-events-none z-0 [background:radial-gradient(circle,rgba(236,72,153,0.1)_0%,transparent_70%)] max-[768px]:bottom-[-60px] max-[768px]:left-[-150px] max-[768px]:w-[250px] max-[768px]:h-[250px] max-[480px]:opacity-50 max-[480px]:bottom-[-50px] max-[480px]:left-[-120px] max-[480px]:w-[200px] max-[480px]:h-[200px]" aria-hidden="true" />
 
-          <div className="cta-content">
-            <div className="cta-badge">✨ Limited Time Offer</div>
-            <h2 className="cta-heading">Begin Your Cosmic Journey</h2>
-            <p className="cta-subheading">
+          <div className="relative z-2 text-center">
+            <div className="inline-flex items-center justify-center px-[1.2rem] py-[0.6rem] mb-6 rounded-full border border-[rgba(228,175,86,0.4)] text-gold text-[0.85rem] font-semibold tracking-[0.05em] backdrop-blur-[10px] [background:linear-gradient(135deg,rgba(228,175,86,0.2),rgba(228,175,86,0.08))] max-[768px]:px-4 max-[768px]:py-2 max-[768px]:text-xs max-[768px]:mb-4 max-[480px]:mb-3">✨ Limited Time Offer</div>
+            <h2 className="m-0 mb-4 [font-family:var(--font-playfair)] text-[clamp(2rem,5vw,3rem)] font-normal leading-[1.2] tracking-[-0.02em] [background-image:linear-gradient(to_right,#ffffff_0%,rgba(228,175,86,0.8)_100%)] bg-clip-text text-transparent max-[768px]:text-[clamp(1.5rem,6vw,2.2rem)] max-[768px]:mb-3 max-[480px]:text-[clamp(1.25rem,7vw,1.75rem)]">Begin Your Cosmic Journey</h2>
+            <p className="m-0 mb-10 max-w-[560px] mx-auto [font-family:var(--font-inter)] text-[1.05rem] leading-[1.7] text-white/70 tracking-[-0.005em] max-[768px]:text-base max-[768px]:leading-[1.6] max-[768px]:mb-8 max-[480px]:text-[0.9rem] max-[480px]:mb-6">
               Get personalized astrological insights from India's most trusted astrologers.
               Your first consultation is waiting.
             </p>
 
             {/* Trust indicators */}
-            <div className="cta-trust-row">
-              <div className="trust-item">
-                <span className="trust-number">50K+</span>
-                <span className="trust-label">Active Members</span>
+            <div className="flex items-center justify-center gap-8 mb-12 py-8 border-t border-b border-white/10 max-[768px]:gap-[1.2rem] max-[768px]:py-6 max-[768px]:mb-8 max-[480px]:flex-wrap max-[480px]:gap-4 max-[480px]:py-[1.2rem] max-[480px]:mb-6">
+              <div className="flex flex-col gap-[0.4rem] flex-[0_1_auto] max-[480px]:flex-[0_1_calc(50%-0.5rem)]">
+                <span className="block text-[1.4rem] font-bold text-gold [font-family:var(--font-playfair)] tracking-[-0.01em] max-[768px]:text-xl">50K+</span>
+                <span className="block text-xs font-semibold text-white/50 uppercase tracking-[0.1em] max-[768px]:text-[0.7rem]">Active Members</span>
               </div>
-              <div className="trust-divider" />
-              <div className="trust-item">
-                <span className="trust-number">4.9★</span>
-                <span className="trust-label">Avg Rating</span>
+              <div className="w-px h-10 [background:linear-gradient(to_bottom,transparent_0%,rgba(255,255,255,0.2)_50%,transparent_100%)] max-[768px]:h-[30px] max-[480px]:hidden" />
+              <div className="flex flex-col gap-[0.4rem] flex-[0_1_auto] max-[480px]:flex-[0_1_calc(50%-0.5rem)]">
+                <span className="block text-[1.4rem] font-bold text-gold [font-family:var(--font-playfair)] tracking-[-0.01em] max-[768px]:text-xl">4.9★</span>
+                <span className="block text-xs font-semibold text-white/50 uppercase tracking-[0.1em] max-[768px]:text-[0.7rem]">Avg Rating</span>
               </div>
-              <div className="trust-divider" />
-              <div className="trust-item">
-                <span className="trust-number">24/7</span>
-                <span className="trust-label">Support</span>
+              <div className="w-px h-10 [background:linear-gradient(to_bottom,transparent_0%,rgba(255,255,255,0.2)_50%,transparent_100%)] max-[768px]:h-[30px] max-[480px]:hidden" />
+              <div className="flex flex-col gap-[0.4rem] flex-[0_1_auto] max-[480px]:flex-[0_1_calc(50%-0.5rem)]">
+                <span className="block text-[1.4rem] font-bold text-gold [font-family:var(--font-playfair)] tracking-[-0.01em] max-[768px]:text-xl">24/7</span>
+                <span className="block text-xs font-semibold text-white/50 uppercase tracking-[0.1em] max-[768px]:text-[0.7rem]">Support</span>
               </div>
             </div>
 
             {/* Action buttons */}
-            <div className="cta-buttons">
-              <a href="#" className="cta-btn cta-btn-primary">
+            <div className="flex flex-col gap-4 mb-6 max-[768px]:gap-[0.8rem] max-[768px]:mb-4 max-[480px]:gap-[0.6rem]">
+              <a href="#" className="group inline-flex items-center justify-center gap-3 px-[1.8rem] py-4 rounded-xl [font-family:var(--font-inter)] text-base font-semibold tracking-[0.02em] cursor-pointer transition-all duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] no-underline whitespace-nowrap text-[#0f172a] shadow-[0_8px_24px_rgba(245,158,11,0.3)] [background:linear-gradient(135deg,#f59e0b_0%,#fbbf24_100%)] hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(245,158,11,0.4)] active:translate-y-0 max-[768px]:px-[1.6rem] max-[768px]:py-[0.9rem] max-[768px]:text-[0.95rem] max-[768px]:w-full max-[768px]:hover:translate-y-0 max-[480px]:px-[1.4rem] max-[480px]:py-[0.85rem] max-[480px]:text-[0.9rem]">
                 <span>Get My Free Kundli</span>
-                <span className="cta-arrow">→</span>
+                <span className="text-[1.2rem] transition-transform duration-300 group-hover:translate-x-1 max-[480px]:hidden">→</span>
               </a>
-              <a href="#" className="cta-btn cta-btn-secondary">
+              <a href="#" className="inline-flex items-center justify-center gap-3 px-[1.8rem] py-4 rounded-xl [font-family:var(--font-inter)] text-base font-semibold tracking-[0.02em] cursor-pointer transition-all duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] no-underline whitespace-nowrap bg-white/[0.08] text-cream border-[1.5px] border-white/20 backdrop-blur-[10px] hover:bg-white/[0.12] hover:border-[rgba(228,175,86,0.5)] hover:shadow-[0_8px_24px_rgba(228,175,86,0.2)] hover:-translate-y-0.5 active:translate-y-0 max-[768px]:px-[1.6rem] max-[768px]:py-[0.9rem] max-[768px]:text-[0.95rem] max-[768px]:w-full max-[768px]:hover:translate-y-0 max-[480px]:px-[1.4rem] max-[480px]:py-[0.85rem] max-[480px]:text-[0.9rem]">
                 <span>Book a Consultation</span>
               </a>
             </div>
 
-            <p className="cta-footnote">No credit card required • Takes 2 minutes</p>
+            <p className="m-0 text-[0.8rem] text-white/40 font-medium tracking-[0.02em] max-[768px]:text-xs">No credit card required • Takes 2 minutes</p>
           </div>
         </div>
       </section>
