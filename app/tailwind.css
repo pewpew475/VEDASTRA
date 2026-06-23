@@ -105,6 +105,11 @@
   }
 }
 
+@keyframes cloudDrift {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(12px, -8px) scale(1.03); }
+}
+
 @keyframes skiper-exit {
   from {
     transform: rotateY(0deg) scale(1);

@@ -964,33 +964,50 @@ export default function Home() {
           </div>
         </section>
 
-      <section className="services-section">
-          <div className="services-atmosphere" aria-hidden="true">
-            <span className="services-cloudscape" />
+      <section className="relative py-[100px] pb-[120px] overflow-hidden max-[768px]:py-16 max-[768px]:pb-20">
+          <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden" aria-hidden="true">
+            <span className="block absolute -inset-[20%] [background:radial-gradient(ellipse_80%_50%_at_15%_40%,rgba(88,28,135,0.22)_0%,transparent_60%),radial-gradient(ellipse_60%_40%_at_85%_60%,rgba(55,20,100,0.18)_0%,transparent_55%),radial-gradient(ellipse_100%_60%_at_50%_100%,rgba(15,10,40,0.55)_0%,transparent_70%)] [animation:cloudDrift_18s_ease-in-out_infinite_alternate]" />
           </div>
-          <div className="section-shell">
-            <p className="section-kicker">Our Services</p>
-            <h2 className="section-title">
+          <div className="relative z-1 max-w-[1200px] mx-auto px-6 max-[768px]:px-4">
+            <p className="text-center text-[0.72rem] font-bold tracking-[0.22em] uppercase text-[#d4af37] m-0 mb-3.5 opacity-90">Our Services</p>
+            <h2 className="text-center text-[clamp(1.65rem,3.5vw,2.4rem)] font-bold leading-[1.25] m-0 mb-5 [background:linear-gradient(135deg,#d4af37_0%,#f5ead8_45%,#b8965a_100%)] [background-clip:text] [-webkit-background-clip:text] text-transparent">
               Spiritual Guidance for Every Aspect of Life
             </h2>
-            <p className="section-intro">
+            <p className="text-center max-w-[640px] mx-auto mb-14 max-[768px]:mb-9 text-[clamp(0.9rem,1.6vw,1rem)] max-[768px]:text-[0.9rem] text-[rgba(220,205,175,0.72)] leading-[1.75]">
               VedAstraa offers expert consultations across multiple spiritual
               sciences to help you navigate life&apos;s important decisions with
               clarity and confidence.
             </p>
 
-            <div className="services-grid">
+            <div className="grid grid-cols-3 gap-6 min-[769px]:max-[1064px]:grid-cols-2 min-[769px]:max-[1064px]:gap-5 max-[768px]:grid-cols-1 max-[768px]:gap-4
+                [&>article:last-child:nth-child(odd)]:min-[769px]:max-[1064px]:[grid-column:1/-1] [&>article:last-child:nth-child(odd)]:min-[769px]:max-[1064px]:max-w-[520px] [&>article:last-child:nth-child(odd)]:min-[769px]:max-[1064px]:mx-auto [&>article:last-child:nth-child(odd)]:min-[769px]:max-[1064px]:w-full">
               {services.map((service) => (
-                <article key={service.title} className="service-card">
+                <article
+                  key={service.title}
+                  className="group relative flex flex-col rounded-[20px] overflow-hidden [background:linear-gradient(160deg,rgba(28,22,62,0.88)_0%,rgba(18,14,45,0.96)_100%)] border border-white/[0.07]
+                    shadow-[0_2px_0_rgba(212,175,55,0.06),0_4px_20px_rgba(0,0,0,0.45),0_16px_48px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.05)]
+                    transition-[transform,box-shadow,border-color] duration-[400ms] ease-[cubic-bezier(0.23,1,0.32,1)]
+                    hover:-translate-y-2 hover:border-[rgba(212,175,55,0.22)]
+                    hover:shadow-[0_0_0_1px_rgba(212,175,55,0.14),0_8px_32px_rgba(0,0,0,0.55),0_24px_64px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.08)]
+                    max-[768px]:hover:translate-y-0"
+                >
                   <div
-                    className="service-media bw"
+                    className="relative w-full h-[210px] max-[768px]:h-[200px] max-[400px]:h-[175px] bg-cover bg-center shrink-0 grayscale contrast-[1.05] brightness-90
+                      transition-[filter,transform] duration-[450ms,550ms] ease-[ease,cubic-bezier(0.23,1,0.32,1)]
+                      group-hover:grayscale-[60%] group-hover:contrast-[1.1] group-hover:brightness-95 group-hover:scale-[1.04]
+                      after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[72px] after:[background:linear-gradient(to_bottom,transparent_0%,rgba(18,14,45,0.96)_100%)] after:pointer-events-none"
                     style={{ backgroundImage: `url(${service.image})` }}
                     aria-hidden="true"
                   />
-                  <div className="service-card-body">
-                    <h3>{service.title}</h3>
-                    <p>{service.description}</p>
-                    <a href="#" className="btn btn-secondary service-btn">
+                  <div className="flex flex-col flex-1 p-6 pb-7 max-[400px]:p-[18px] max-[400px]:pb-[22px]">
+                    <h3 className="m-0 mb-3 text-[1.15rem] max-[768px]:text-[1.1rem] font-bold leading-[1.3] tracking-[0.01em] [background:linear-gradient(90deg,#d4af37_0%,#f5ead8_55%)] [background-clip:text] [-webkit-background-clip:text] text-transparent">{service.title}</h3>
+                    <p className="m-0 mb-6 text-[0.875rem] text-[rgba(210,195,165,0.72)] leading-[1.7] flex-1">{service.description}</p>
+                    <a
+                      href="#"
+                      className="inline-flex items-center justify-center self-start max-[768px]:self-stretch max-[768px]:justify-center mt-auto px-[22px] py-2.5 text-[0.72rem] font-bold tracking-[0.14em] uppercase no-underline text-[#e8d5a3] bg-transparent border border-[rgba(212,175,55,0.4)] rounded-md cursor-pointer whitespace-nowrap
+                        transition-[background,border-color,color,box-shadow,transform] duration-300 ease-[ease,ease,ease,ease,ease]
+                        hover:bg-[rgba(212,175,55,0.1)] hover:border-[rgba(212,175,55,0.75)] hover:text-[#f5ead8] hover:shadow-[0_0_12px_rgba(212,175,55,0.15),inset_0_1px_0_rgba(212,175,55,0.1)] hover:translate-x-[3px]"
+                    >
                       {service.button}
                     </a>
                   </div>
