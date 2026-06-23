@@ -1017,17 +1017,20 @@ export default function Home() {
           </div>
         </section>
 
-      <section className="experts-section" id="consult-experts">
-          <div className="section-shell experts-shell">
-            <div className="experts-showcase">
-              <div className="experts-visual" aria-hidden="true">
-                <div className="experts-portrait">
+      <section className="relative py-[100px] pb-[110px] overflow-hidden max-[768px]:py-16 max-[768px]:pb-[72px]
+          before:content-[''] before:absolute before:inset-0 before:z-0 before:pointer-events-none
+          before:[background:radial-gradient(ellipse_55%_60%_at_15%_50%,rgba(88,28,135,0.2)_0%,transparent_65%),radial-gradient(ellipse_40%_50%_at_85%_50%,rgba(55,20,100,0.14)_0%,transparent_60%)]" id="consult-experts">
+          <div className="section-shell relative z-1">
+            <div className="grid grid-cols-2 gap-16 items-center min-[769px]:max-[1064px]:gap-9 max-[768px]:grid-cols-1 max-[768px]:gap-10">
+              <div className="flex items-center justify-center relative order-1" aria-hidden="true">
+                <div className="relative w-[min(460px,100%)] aspect-square [filter:drop-shadow(0_0_40px_rgba(168,85,247,0.28))_drop-shadow(0_0_80px_rgba(212,175,55,0.08))]
+                    min-[769px]:max-[1064px]:w-[min(360px,100%)] max-[768px]:w-[min(280px,80vw)] max-[768px]:[filter:drop-shadow(0_0_24px_rgba(168,85,247,0.22))]">
                   <ClassicZodiacWheel />
                 </div>
               </div>
 
-              <div className="experts-panel">
-                <div className="experts-copy">
+              <div className="flex flex-col gap-10 max-[768px]:order-2 max-[768px]:gap-7">
+                <div className="flex flex-col max-[768px]:text-center max-[768px]:items-center">
                   <p className="section-kicker">Consult Verified Experts</p>
                   <h2 className="section-title">Connect With Verified Astrologers</h2>
                   <p className="section-body">
@@ -1035,33 +1038,37 @@ export default function Home() {
                     authenticity, and accurate guidance. Choose from astrologers,
                     numerologists, tarot readers, and Vastu consultants.
                   </p>
-                  <ul className="feature-list experts-feature-list">
+                  <ul className="list-none p-0 m-0 mb-8 flex flex-col gap-2.5 max-[768px]:items-start max-[768px]:w-fit max-[768px]:mx-auto max-[768px]:mb-7">
                     {consultationModes.map((item) => (
-                      <li key={item}>{item}</li>
+                      <li key={item} className="flex items-center gap-2.5 text-[0.75rem] font-bold tracking-[0.16em] uppercase text-[rgba(232,213,163,0.85)]
+                          before:content-[''] before:inline-block before:w-[7px] before:h-[7px] before:bg-[#d4af37] before:rounded-[1px] before:rotate-45 before:shrink-0 before:shadow-[0_0_6px_rgba(212,175,55,0.55)]">{item}</li>
                     ))}
                   </ul>
-                  <a href="#" className="btn btn-primary experts-cta">
+                  <a href="#" className="btn btn-primary self-start max-[768px]:self-stretch max-[768px]:text-center max-[768px]:justify-center max-[768px]:w-full">
                     Browse Astrologers
                   </a>
                 </div>
 
-                <div className="experts-grid">
-                  <div className="expert-mini-card">
-                    <span>Astrology</span>
-                    <strong>Birth Charts</strong>
-                  </div>
-                  <div className="expert-mini-card">
-                    <span>Tarot</span>
-                    <strong>Guided Readings</strong>
-                  </div>
-                  <div className="expert-mini-card">
-                    <span>Vastu</span>
-                    <strong>Space Harmony</strong>
-                  </div>
-                  <div className="expert-mini-card">
-                    <span>Numerology</span>
-                    <strong>Life Path Insights</strong>
-                  </div>
+                <div className="grid grid-cols-2 gap-3 max-[768px]:gap-2.5 max-[420px]:grid-cols-1 max-[420px]:gap-2">
+                  {[
+                    { label: "Astrology", title: "Birth Charts" },
+                    { label: "Tarot", title: "Guided Readings" },
+                    { label: "Vastu", title: "Space Harmony" },
+                    { label: "Numerology", title: "Life Path Insights" },
+                  ].map((card) => (
+                    <div
+                      key={card.label}
+                      className="group flex flex-col gap-1.5 p-[18px_20px] rounded-[14px] [background:linear-gradient(135deg,rgba(38,28,80,0.75)_0%,rgba(22,16,55,0.88)_100%)] border border-white/[0.06]
+                        shadow-[0_2px_12px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.04)] cursor-default
+                        transition-[border-color,box-shadow,transform,background] duration-[350ms] ease-[cubic-bezier(0.23,1,0.32,1)]
+                        hover:border-[rgba(212,175,55,0.28)] hover:-translate-y-[3px] hover:[background:linear-gradient(135deg,rgba(48,35,95,0.85)_0%,rgba(28,20,65,0.95)_100%)] hover:shadow-[0_0_0_1px_rgba(212,175,55,0.1),0_8px_28px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.07)]
+                        min-[769px]:max-[1064px]:p-[14px_16px] max-[768px]:p-[14px_14px] max-[768px]:hover:translate-y-0
+                        max-[420px]:flex-row max-[420px]:items-center max-[420px]:gap-3.5 max-[420px]:p-[14px_16px]"
+                    >
+                      <span className="text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[#d4af37] opacity-85 max-[420px]:block">{card.label}</span>
+                      <strong className="text-[0.95rem] font-bold text-[#f0e6d0] tracking-[0.01em] leading-[1.3] max-[768px]:text-[0.88rem] max-[420px]:block">{card.title}</strong>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
