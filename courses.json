@@ -1,0 +1,512 @@
+{
+  "courses": [
+    {
+      "id": "money-reiki",
+      "title": "Money Reiki Course",
+      "alias": ["Money Rekhi"],
+      "category": "Energy Healing",
+      "overview": "A powerful spiritual healing and manifestation program focused on working with money energy using Reiki symbols, meditations, and energy techniques to clear financial blockages and attract abundance.",
+      "levels": [
+        {
+          "name": "Practitioner Level",
+          "duration": "2 days",
+          "modules": [
+            "Basics of Money Reiki and understanding money energy",
+            "Attunement with Money Reiki symbols",
+            "Money protection techniques",
+            "Money Wish Box and Money Mirror practices",
+            "Golden Pyramid Meditation",
+            "Attracting money while sleeping",
+            "Vastu and energy alignment for wealth"
+          ],
+          "outcome": "Ability to work with abundance energy for personal financial improvement."
+        },
+        {
+          "name": "Master Level",
+          "modules": [
+            "Advanced Money Reiki techniques",
+            "How to give attunements to others",
+            "Deeper energy healing practices",
+            "Becoming a certified Money Reiki Master"
+          ],
+          "outcome": "Become a professional healer and teacher capable of attuning others."
+        }
+      ],
+      "features": ["Sacred Symbols", "Abundance Meditations", "Manifestation Tools", "Certified Masterhood"],
+      "positioning": "Heal your money energy and manifest lasting abundance through sacred lineage.",
+      "image": "https://i.pinimg.com/736x/63/a1/19/63a1192edcc6ac3b04e65e8f6dcd9bf7.jpg",
+      "featured": true,
+      "trending": true,
+      "price": 4999,
+      "discountPrice": 2999,
+      "currency": "INR"
+    },
+    {
+      "id": "ved-astra-astrology",
+      "title": "Ved Astra Astrology Course",
+      "category": "Astrology",
+      "overview": "Structured Vedic astrology program covering fundamentals to professional practice including chart reading and prediction techniques.",
+      "levels": [
+        {
+          "name": "Level 1 - Foundations",
+          "duration": "30 days",
+          "programName": "Ved Astra Astrology Foundations",
+          "modules": [
+            "Introduction to Astrology",
+            "Planets (Grahas)",
+            "Zodiac Signs (Rashis)",
+            "Houses (Bhavas)",
+            "Basic Chart Reading",
+            "Practical Assignments"
+          ],
+          "outcome": "Understand horoscope structure and perform basic analysis."
+        },
+        {
+          "name": "Level 2 - Practitioner",
+          "duration": "60 days",
+          "programName": "Ved Astra Astrology Practitioner",
+          "modules": [
+            "Dasha System",
+            "Transits (Gochar)",
+            "Yogas",
+            "Marriage and Relationship Analysis",
+            "Career and Finance Predictions",
+            "Case Studies"
+          ],
+          "outcome": "Perform detailed analysis and predictions."
+        },
+        {
+          "name": "Level 3 - Master",
+          "duration": "90 days",
+          "programName": "Ved Astra Grand Master Astrology Program",
+          "modules": [
+            "Advanced Prediction Techniques",
+            "Parashari Astrology",
+            "Jaimini Astrology",
+            "Foreign Travel Analysis",
+            "Health and Medical Astrology",
+            "Professional Practice and Business Setup"
+          ],
+          "outcome": "Become a professional astrologer."
+        }
+      ],
+      "features": ["Vedic Lineage", "Chart Mastery", "Predictive Accuracy", "Client Consultation Training"],
+      "certification": "Ved Astra Certified Astrology Practitioner/Master",
+      "positioning": "From basic chart reading to running a successful astrology practice with divine accuracy.",
+      "image": "https://i.pinimg.com/736x/f6/a2/57/f6a25752e4815a98d7599bdfd563a725.jpg",
+      "price": 14999,
+      "discountPrice": 9999,
+      "currency": "INR"
+    },
+    {
+      "id": "numerology",
+      "title": "Numerology Courses",
+      "category": "Divination",
+      "overview": "Comprehensive numerology program covering destiny, personality, relationships, and wealth using Vedic and traditional systems.",
+      "levels": [
+        {
+          "name": "Level 1 - Foundation",
+          "duration": "15-20 days",
+          "modules": [
+            "Introduction to Numerology",
+            "Core Numbers 1-9",
+            "Master Numbers",
+            "Name Numerology Basics",
+            "Compatibility Basics",
+            "Practical Applications"
+          ],
+          "outcome": "Perform basic readings and beginner consultations."
+        },
+        {
+          "name": "Level 2 - Advanced",
+          "duration": "25-30 days",
+          "modules": [
+            "Advanced Chart Reading",
+            "Karmic Numbers",
+            "Relationship Compatibility",
+            "Career and Financial Numerology",
+            "Prediction Techniques",
+            "Remedies and Case Studies"
+          ],
+          "outcome": "Offer professional consultations."
+        },
+        {
+          "name": "Level 3 - Master",
+          "duration": "40-60 days",
+          "modules": [
+            "Master Chart Analysis",
+            "Business Numerology",
+            "Prediction Mastery",
+            "Client Consultation Skills",
+            "Case Studies and Branding"
+          ],
+          "outcome": "Become a certified numerologist."
+        }
+      ],
+      "bonusModules": [
+        "Mobile Numerology",
+        "House Numerology",
+        "Vehicle Numerology",
+        "Celebrity and Brand Analysis",
+        "Digital Marketing"
+      ],
+      "features": ["Vedic & Lo-Shu Grid", "Mobile Numerology", "Corporate Consulting", "Branding Mastery"],
+      "certification": "Glitzstone / Ved Astra Certified Numerology Master",
+      "positioning": "Unlock your life code with numbers and turn knowledge into professional abundance.",
+      "image": "https://i.pinimg.com/736x/62/7f/6e/627f6ef942200527f050e27d078745e1.jpg"
+    },
+    {
+      "id": "tarot-master",
+      "title": "Ved Astra Tarot Master Course",
+      "category": "Divination",
+      "overview": "Learn Tarot reading from basic intuition to professional consulting and spiritual business building.",
+      "levels": [
+        {
+          "name": "Level 1 - Foundation",
+          "modules": [
+            "Tarot Introduction",
+            "Deck Structure",
+            "Basic Card Meanings",
+            "Simple Spreads"
+          ],
+          "outcome": "Perform confident basic readings."
+        },
+        {
+          "name": "Level 2 - Advanced",
+          "modules": [
+            "Deep Card Interpretation",
+            "Advanced Spreads",
+            "Energy Work",
+            "Prediction Techniques"
+          ],
+          "outcome": "Perform accurate professional readings."
+        },
+        {
+          "name": "Level 3 - Master",
+          "modules": [
+            "Professional Reading Skills",
+            "Business Setup",
+            "Intuitive Development",
+            "Case Studies"
+          ],
+          "outcome": "Become a certified Tarot professional."
+        }
+      ],
+      "features": ["Intuitive Activation", "Psychic Protection", "Business Blueprint", "Linage Wisdom"],
+      "positioning": "Where Ancient Wisdom Meets Divine Guidance through the Oracle's Lens.",
+      "image": "https://i.pinimg.com/736x/dc/63/2a/dc632aa46fdb1b690694f3da297d403a.jpg",
+      "trending": true
+    },
+    {
+      "id": "reiki-healing",
+      "title": "Ved Astra Reiki Healing Master Program",
+      "category": "Energy Healing",
+      "overview": "Complete Reiki training from self-healing to teaching others and building a professional healing practice.",
+      "levels": [
+        {
+          "name": "Level 1 - Basic",
+          "modules": [
+            "Reiki Introduction",
+            "Energy Basics",
+            "Hand Positions",
+            "Attunement"
+          ],
+          "outcome": "Self-healing mastery."
+        },
+        {
+          "name": "Level 2 - Advanced",
+          "modules": [
+            "Reiki Symbols",
+            "Distance Healing",
+            "Chakra Healing",
+            "Advanced Attunement"
+          ],
+          "outcome": "Advanced healing skills."
+        },
+        {
+          "name": "Level 3 - Master",
+          "modules": [
+            "Master Symbols",
+            "Deep Healing",
+            "Professional Practice",
+            "Spiritual Development"
+          ],
+          "outcome": "Become a Reiki teacher."
+        }
+      ],
+      "features": ["Sacred Attunements", "Aura Cleansing", "Distance Healing", "Master-Level Lineage"],
+      "positioning": "Awaken Your Healing Power & Become a Certified Energy Healer in the Usui Tradition.",
+      "image": "https://i.pinimg.com/736x/1a/01/82/1a01825a77f6de875cce4498a6296a66.jpg"
+    },
+    {
+      "id": "meditation-21-days",
+      "title": "21-Day Meditation Master Course",
+      "category": "Meditation",
+      "overview": "A transformative 21-day journey designed to rewire your nervous system for calmness, emotional balance, and high-frequency manifestation. This program distills ancient mindfulness practices into a modern, actionable daily rhythm suitable for all lifestyles.",
+      "levels": [
+        {
+          "name": "Phase 1: Foundation & Detox",
+          "duration": "Days 1-7",
+          "modules": [
+            "Breathwork Fundamentals (Pranayama)",
+            "Silent Observation Techniques",
+            "Guided Body Scan for Physical Release",
+            "Cultivating Gratitude & Positive Neural Pathways",
+            "Emotional Detox & Letting Go Rituals"
+          ],
+          "outcome": "Experience immediate reduction in stress and mental clutter."
+        },
+        {
+          "name": "Phase 2: Energy & Chakra Alignment",
+          "duration": "Days 8-14",
+          "modules": [
+            "Vibrational Sound Meditations",
+            "Chakra Activation Series",
+            "Balancing Yin & Yang Energies",
+            "Opening the Heart Center",
+            "Third Eye Awareness Practices"
+          ],
+          "outcome": "Feel a profound sense of inner balance and vital energy flow."
+        },
+        {
+          "name": "Phase 3: Manifestation & Mastery",
+          "duration": "Days 15-21",
+          "modules": [
+            "Quantum Visualization Techniques",
+            "Setting Powerful Intentions (Sankalpa)",
+            "Connecting with the Higher Self",
+            "Abundance Manifestation Protocols",
+            "Integrating Daily Presence in Modern Life"
+          ],
+          "outcome": "Attain the ability to consciously manifest your desires through stillness."
+        }
+      ],
+      "dailyStructure": {
+        "morning": "15 min: Activation Breathwork",
+        "evening": "10 min: Mindfulness Walk or Stillness",
+        "night": "10 min: Gratitude & Deep Sleep Protocol"
+      },
+      "bonusModules": [
+        "Walking Meditation Guide",
+        "Digital Detox Blueprint",
+        "Mindful Eating Masterclass",
+        "Meditation Music Library"
+      ],
+      "features": ["Daily Guided Audio", "Manifestation Journals", "Lifetime Community Support", "Certified Mindfulness Practitioner Status"],
+      "positioning": "21 Days to a New You: Rewire Your Mind for Peace and Prosperity.",
+      "image": "https://i.pinimg.com/736x/83/e6/4e/83e64ee07a789eccd3658a0cab5571e0.jpg",
+      "outcome": "Achieve lasting mental clarity, emotional resilience, and the power to manifest from a state of total peace."
+    },
+    {
+      "id": "vastu",
+      "title": "Vastu Shastra Mastery",
+      "category": "Vastu",
+      "overview": "Master the ancient science of directions and architecture to create harmonious living and working spaces that naturally attract wealth, health, and happiness.",
+      "levels": [
+        {
+          "name": "Vastu Practitioner",
+          "duration": "30 days",
+          "modules": [
+            "Fundamental Principles of Directions",
+            "Understanding the 5 Elements (Pancha Tattva)",
+            "Vastu Purusha Mandala Analysis",
+            "Entrance and Gate Locations",
+            "Room-by-Room Energy Mapping"
+          ],
+          "outcome": "Correct basic Vastu defects and perform domestic consultations."
+        },
+        {
+          "name": "Advanced Vastu",
+          "duration": "60 days",
+          "modules": [
+            "Industrial and Commercial Vastu",
+            "Geopathic Stress Detection",
+            "Vastu Remedies Without Demolition",
+            "Color Therapy and Energy Enhancers",
+            "Pyra-Vastu Basics"
+          ],
+          "outcome": "Handle complex commercial projects and professional remedies."
+        },
+        {
+          "name": "Vastu Grand Master",
+          "duration": "90 days",
+          "modules": [
+            "Astrology-Vastu Integration (Astro-Vastu)",
+            "Earth Energy Mastery",
+            "Professional Consultancy Setup",
+            "Advanced Case Studies",
+            "Global Architecture Standards"
+          ],
+          "outcome": "Become a world-class certified Vastu Grand Master."
+        }
+      ],
+      "features": ["Non-Destructive Remedies", "Astro-Vastu Integration", "Commercial Mastery", "Certification"],
+      "positioning": "Align your space with the laws of nature to unlock the doors of abundance.",
+      "image": "https://i.pinimg.com/736x/aa/b8/95/aab895baaf3a5802d74ebe08bea09884.jpg",
+      "outcome": "Become a certified professional Vastu consultant recognized globally."
+    },
+    {
+      "id": "akashic-records",
+      "title": "Akashic Records Master Path",
+      "category": "Spiritual",
+      "overview": "Journey into the ethereal library of your soul's history. Learn to access your Akashic records to clear past-life karma, understand your soul purpose, and receive divine guidance for your current life path.",
+      "levels": [
+        {
+          "name": "Soul Awareness",
+          "duration": "15 days",
+          "modules": [
+            "Introduction to the Akashic Plane",
+            "Sacred Prayers for Entry",
+            "Ethics and Responsibility",
+            "Accessing Personal Records",
+            "Self-Reading Techniques"
+          ],
+          "outcome": "Develop the ability to access and interpret your own soul's records."
+        },
+        {
+          "name": "Akashic Practitioner",
+          "duration": "30 days",
+          "modules": [
+            "Accessing Records for Others",
+            "Past-Life Karma Clearing",
+            "Soul Contract Analysis",
+            "Healing Through the Records",
+            "Receiving High-Frequency Guidance"
+          ],
+          "outcome": "Professionally read and heal the soul records of clients."
+        }
+      ],
+      "features": ["Sacred Prayers", "Karma Clearing", "Soul Contract Work", "High-Frequency Guidance"],
+      "positioning": "Unlock the library of your soul to heal the past and design your future.",
+      "image": "https://i.pinimg.com/736x/54/05/06/540506775672e4221166a97808d70158.jpg",
+      "outcome": "Certified Akashic Records Practitioner capable of professional soul-consultations."
+    },
+    {
+      "id": "aura-healing",
+      "title": "Aura Reading & Healing Mastery",
+      "category": "Energy Healing",
+      "overview": "A professional certification program to perceive, interpret, and heal the human bio-field. Master the art of seeing the invisible energy layers and clearing the imbalances that manifest as physical and emotional challenges.",
+      "levels": [
+        {
+          "name": "Level 1: The Seer's Path",
+          "duration": "15 days",
+          "modules": [
+            "The Science of the Human Bio-Field",
+            "Techniques to Develop Auric Vision",
+            "Primary & Secondary Color Meanings",
+            "Mapping the 7 Layers of the Aura",
+            "Scanning for Energy Leaks"
+          ],
+          "outcome": "Ability to visually and intuitively scan human energy fields."
+        },
+        {
+          "name": "Level 2: The Healer's Shield",
+          "duration": "30 days",
+          "modules": [
+            "Advanced Cleansing Rituals",
+            "Strengthening the Auric Shield",
+            "Dealing with Energy Vampires",
+            "Removing Psychic Cords & Hooks",
+            "Distance Aura Healing Protocols"
+          ],
+          "outcome": "Mastery over personal energy protection and advanced cleansing techniques."
+        },
+        {
+          "name": "Level 3: Professional Master",
+          "duration": "45 days",
+          "modules": [
+            "Diagnostic Reading for Clients",
+            "Integrating Color Therapy in Healing",
+            "Soul-Aura Connection",
+            "Setting up a Professional Healing Practice",
+            "Master-Level Ethics and Protection"
+          ],
+          "outcome": "Become a Certified Aura Healer recognized for professional consultancy."
+        }
+      ],
+      "bonusModules": [
+        "Crystal Aura Cleansing",
+        "Sound Frequency for Aura Repair",
+        "Environmental Aura Clearing"
+      ],
+      "features": ["Vision Development Exercises", "Energy Protection Protocols", "Distance Healing Techniques", "Healer Status"],
+      "positioning": "See the invisible, heal the visible. Master the sacred science of human energy.",
+      "image": "https://i.pinimg.com/1200x/a2/96/f6/a296f6bd007c2c7fd3633933768e4323.jpg",
+      "outcome": "Certified Aura Healer capable of advanced energetic diagnostics and profound soul-level healing."
+    },
+    {
+      "id": "rudraksha",
+      "title": "Sacred Rudraksha Science",
+      "category": "Spiritual",
+      "overview": "An intensive study into the mystical world of Rudraksha. Learn to identify genuine beads, understand the planetary connections of each Mukhi, and prescribe Rudraksha combinations for health, wealth, and spiritual growth.",
+      "duration": "30 days",
+      "modules": [
+        "History and Botanical Origins",
+        "1-21 Mukhi: Planetary & Deity Connections",
+        "Scientific Identification (Lab Testing)",
+        "Activation and Energization (Pran Pratishtha)",
+        "Astro-Remedies through Rudraksha",
+        "Therapeutic Applications of Power Beads",
+        "Professional Rudraksha Consultancy"
+      ],
+      "features": ["Authentication Mastery", "Activation Rituals", "Astrology Connection", "Therapeutic Science"],
+      "positioning": "Harness the power of Shiva's tears for spiritual and material evolution.",
+      "image": "https://i.pinimg.com/1200x/10/0d/05/100d05074e355b6281a2df0a8c88a303.jpg",
+      "outcome": "Certified Rudraksha Consultant with deep knowledge in remedial science."
+    },
+    {
+      "id": "chakra-healing",
+      "title": "Seven Chakras Awakening & Healing",
+      "category": "Energy Healing",
+      "overview": "A comprehensive mastery program focusing on the seven primary energy centers of the body. From foundational understanding to advanced activation, learn to align your inner universe for complete physical, emotional, and spiritual transformation.",
+      "levels": [
+        {
+          "name": "Level 1: Foundations & Diagnosis",
+          "duration": "20 days",
+          "modules": [
+            "Anatomy of the Energy Centers",
+            "Chakra Imbalance Symptoms & Root Causes",
+            "Using Pendulums for Chakra Diagnosis",
+            "Intro to Bija Mantras (Seed Sounds)",
+            "Food & Color Therapy for Each Chakra"
+          ],
+          "outcome": "Identify and diagnose specific chakra blockages in yourself and others."
+        },
+        {
+          "name": "Level 2: Activation & Alignment",
+          "duration": "40 days",
+          "modules": [
+            "Advanced Breathwork for Activation",
+            "Crystal Healing Grids for Each Center",
+            "Guided Visualization for Alignment",
+            "Affirmation Science for Subconscious Rewiring",
+            "Kundalini Awareness Basics"
+          ],
+          "outcome": "Master the techniques to actively clear and align the energy centers."
+        },
+        {
+          "name": "Level 3: Master Healer Path",
+          "duration": "60 days",
+          "modules": [
+            "Integrating Mudras with Chakra Healing",
+            "Sound Healing with Tibetan Bowls",
+            "Professional Healing Session Protocols",
+            "Ethics of Energy Transmission",
+            "Client Case Study & Graduation Project"
+          ],
+          "outcome": "Certified Master Chakra Healer ready for professional global practice."
+        }
+      ],
+      "bonusModules": [
+        "The Minor Chakras Study",
+        "Chakra Meditation for Kids",
+        "Yoga Asanas for Chakra Flow"
+      ],
+      "features": ["Diagnostic Pendulum Training", "Sound Healing Frequency Guide", "Crystal Therapy Protocol", "21-Day Activation Blueprint"],
+      "positioning": "Balance your inner universe to transform your outer reality through sacred alignment.",
+      "image": "https://i.pinimg.com/736x/6f/c9/d4/6fc9d41aaa7ceac7dee07185e018191b.jpg",
+      "featured": true,
+      "outcome": "Become a Certified Professional Chakra Healer recognized for deep energetic expertise."
+    }
+  ]
+}

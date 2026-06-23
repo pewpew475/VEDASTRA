@@ -1,0 +1,14 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#090909"/>
+  <circle cx="220" cy="150" r="2" fill="#F4F4F4"/>
+  <circle cx="1030" cy="180" r="1.8" fill="#F4F4F4"/>
+  <circle cx="870" cy="90" r="1.2" fill="#D9D9D9"/>
+  <g opacity="0.9">
+    <text x="220" y="450" fill="#E4AF56" font-size="240" font-family="Georgia, serif">3</text>
+    <text x="430" y="360" fill="#F4F4F4" fill-opacity="0.8" font-size="180" font-family="Georgia, serif">6</text>
+    <text x="615" y="520" fill="#E4AF56" font-size="280" font-family="Georgia, serif">9</text>
+    <text x="860" y="360" fill="#F4F4F4" fill-opacity="0.7" font-size="170" font-family="Georgia, serif">7</text>
+  </g>
+  <rect x="150" y="210" width="900" height="380" rx="28" stroke="#F4F4F4" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M150 400H1050" stroke="#F4F4F4" stroke-opacity="0.12"/>
+</svg>

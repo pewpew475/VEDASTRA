@@ -1,0 +1,68 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0b1f3b"/>
+  <rect width="1600" height="900" fill="url(#voids)" opacity="0.65"/>
+
+  <g filter="url(#cloudBlurHeavy)" opacity="0.95">
+    <path d="M84 178C135 102 264 86 340 146C397 78 510 62 601 108C709 162 760 284 716 388C824 391 910 480 900 590C888 706 791 796 674 796H224C99 796 -2 695 -2 570C-2 456 79 361 186 339C153 278 137 229 84 178Z" fill="#6D6D6D"/>
+  </g>
+
+  <g filter="url(#cloudBlurMid)" opacity="0.88">
+    <path d="M280 88C354 35 451 39 521 89C591 26 702 21 789 72C911 144 965 295 907 430C1045 440 1152 556 1141 694C1129 835 1011 948 868 948H383C230 948 106 824 106 671C106 532 207 419 340 399C303 306 210 169 280 88Z" fill="#5E5E5E"/>
+  </g>
+
+  <g filter="url(#cloudBlurMid)" opacity="0.84">
+    <path d="M879 118C951 61 1051 62 1124 113C1188 53 1287 48 1361 99C1474 177 1518 321 1468 441C1575 456 1660 545 1660 653C1660 772 1564 868 1445 868H1002C883 868 787 772 787 653C787 558 848 476 933 447C907 353 812 212 879 118Z" fill="#656565"/>
+  </g>
+
+  <g filter="url(#cloudBlurLight)" opacity="0.7">
+    <path d="M28 463C88 418 171 421 228 470C274 414 354 398 423 431C501 468 538 550 515 627C595 635 657 702 654 783C650 871 579 942 491 942H141C45 942 -33 864 -33 768C-33 688 21 620 97 602C79 552 -17 500 28 463Z" fill="#4F4F4F"/>
+  </g>
+
+  <g filter="url(#cloudBlurLight)" opacity="0.62">
+    <path d="M1124 390C1178 350 1252 351 1304 397C1350 350 1422 339 1480 368C1557 407 1594 490 1571 566C1644 576 1700 639 1698 715C1695 799 1627 867 1543 867H1209C1117 867 1043 793 1043 701C1043 624 1096 559 1168 540C1151 491 1084 425 1124 390Z" fill="#4B4B4B"/>
+  </g>
+
+  <g filter="url(#streakBlur)" opacity="0.3">
+    <path d="M-30 230C176 170 340 212 504 200C669 188 764 135 922 153C1046 167 1165 242 1332 221C1452 206 1541 169 1662 189V352H-30V230Z" fill="#8A8A8A"/>
+  </g>
+
+  <g filter="url(#streakBlur)" opacity="0.24">
+    <path d="M-44 520C132 478 273 510 395 501C522 492 653 420 796 435C924 449 999 512 1153 503C1295 494 1422 438 1649 488V626H-44V520Z" fill="#7D7D7D"/>
+  </g>
+
+  <g filter="url(#grain)" opacity="0.22">
+    <rect width="1600" height="900" fill="url(#noise)"/>
+  </g>
+
+  <defs>
+    <linearGradient id="voids" x1="800" y1="0" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#0b1f3b" stop-opacity="0.15"/>
+  <stop offset="0.38" stop-color="#0b1f3b" stop-opacity="0.02"/>
+  <stop offset="0.72" stop-color="#0b1f3b" stop-opacity="0.24"/>
+  <stop offset="1" stop-color="#0b1f3b" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <filter id="cloudBlurHeavy" x="-142" y="-73" width="1244" height="1069" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="52"/>
+    </filter>
+    <filter id="cloudBlurMid" x="-14" y="-86" width="1888" height="1234" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="44"/>
+    </filter>
+    <filter id="cloudBlurLight" x="-153" y="280" width="1990" height="812" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+    <filter id="streakBlur" x="-144" y="53" width="1905" height="673" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" seed="7" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.34"/>
+      </feComponentTransfer>
+    </filter>
+    <pattern id="noise" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <rect width="1" height="1" fill="#FFFFFF"/>
+    </pattern>
+  </defs>
+</svg>
