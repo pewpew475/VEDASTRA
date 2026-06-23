@@ -1222,33 +1222,54 @@ export default function Home() {
           </div>
         </section>
 
-      <section className="dashboard-section">
-          <div className="section-shell split-panel dashboard-panel">
-            <div className="dashboard-visual">
-              <div className="dashboard-card main-dashboard-card">
-                <p>VedAstraa Dashboard</p>
-                <strong>Personalized for your birth profile</strong>
-                <span>Daily guidance, remedies, and aligned recommendations.</span>
+      <section className="relative py-[100px] pb-[110px] overflow-hidden max-[768px]:py-16 max-[768px]:pb-[72px]
+          before:content-[''] before:absolute before:inset-0 before:z-0 before:pointer-events-none
+          before:[background:radial-gradient(ellipse_50%_55%_at_10%_50%,rgba(88,28,135,0.18)_0%,transparent_65%),radial-gradient(ellipse_40%_45%_at_90%_50%,rgba(55,20,100,0.12)_0%,transparent_60%)]">
+          <div className="section-shell relative z-1 grid grid-cols-2 gap-[72px] items-center text-left min-[769px]:max-[1064px]:gap-10 max-[768px]:grid-cols-1 max-[768px]:gap-10">
+            <div className="relative flex flex-col gap-[14px] rounded-[20px] [background:linear-gradient(135deg,rgba(168,85,247,0.08),rgba(236,72,153,0.08)),linear-gradient(180deg,rgba(var(--cosmos-dark-rgb),0.94),rgba(var(--cosmos-dark-rgb),0.88))] border border-white/[0.08] shadow-[0_24px_70px_rgba(var(--cosmos-dark-rgb),0.35)] [backdrop-filter:blur(10px)] max-[768px]:order-2 max-[768px]:gap-3 max-[768px]:rounded-[25px] max-[768px]:bg-[rgb(255,251,0)]">
+              <div className="group relative rounded-[18px] overflow-hidden flex flex-col gap-2.5 pt-8 px-7 pb-[30px]
+                  [background:linear-gradient(145deg,rgba(22,16,52,0.9)_0%,rgba(12,8,32,0.96)_100%)] border border-white/[0.07]
+                  shadow-[0_2px_0_rgba(212,175,55,0.05),0_4px_20px_rgba(0,0,0,0.5),0_12px_40px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.05)] [backdrop-filter:blur(10px)]
+                  transition-[border-color,box-shadow,transform] duration-[350ms] ease-[ease,ease,cubic-bezier(0.23,1,0.32,1)]
+                  hover:border-[rgba(212,175,55,0.2)] hover:-translate-y-[3px] hover:shadow-[0_0_0_1px_rgba(212,175,55,0.1),0_8px_32px_rgba(0,0,0,0.55),0_20px_56px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.07)]
+                  before:content-[''] before:absolute before:top-0 before:left-[20%] before:right-[20%] before:h-px before:[background:linear-gradient(90deg,transparent,rgba(212,175,55,0.3),transparent)] before:pointer-events-none
+                  after:content-[''] after:absolute after:bottom-5 after:right-6 after:w-[60px] after:h-[60px] after:[background:radial-gradient(circle_at_center,rgba(212,175,55,0.12)_0%,transparent_70%)] after:rounded-full after:pointer-events-none
+                  max-[768px]:px-[22px] max-[768px]:pt-6 max-[768px]:pb-6 max-[768px]:hover:translate-y-0">
+                <p className="m-0 text-[0.62rem] font-bold tracking-[0.2em] uppercase text-[#d4af37] opacity-85">VedAstraa Dashboard</p>
+                <strong className="block text-[1.2rem] font-bold text-[#f0e6d0] leading-[1.35] tracking-[0.01em] min-[769px]:max-[1064px]:text-[1.05rem] max-[768px]:text-[1.05rem]">Personalized for your birth profile</strong>
+                <span className="block text-[0.82rem] text-[rgba(210,195,165,0.65)] leading-[1.65] mt-0.5">Daily guidance, remedies, and aligned recommendations.</span>
               </div>
-              <div className="dashboard-card side-dashboard-card">
-                <p>Today&apos;s Cosmic Snapshot</p>
-                <strong>Favorable energies are rising</strong>
+              <div className="relative rounded-[18px] overflow-hidden flex flex-col gap-2 py-[22px] px-7
+                  [background:linear-gradient(145deg,rgba(22,16,52,0.9)_0%,rgba(12,8,32,0.96)_100%)] border border-white/[0.07]
+                  shadow-[0_2px_0_rgba(212,175,55,0.05),0_4px_20px_rgba(0,0,0,0.5),0_12px_40px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.05)] [backdrop-filter:blur(10px)]
+                  transition-[border-color,box-shadow,transform] duration-[350ms] ease-[ease,ease,cubic-bezier(0.23,1,0.32,1)]
+                  hover:border-[rgba(212,175,55,0.2)] hover:-translate-y-[3px] hover:shadow-[0_0_0_1px_rgba(212,175,55,0.1),0_8px_32px_rgba(0,0,0,0.55),0_20px_56px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.07)]
+                  before:content-[''] before:absolute before:top-0 before:left-[20%] before:right-[20%] before:h-px before:[background:linear-gradient(90deg,transparent,rgba(212,175,55,0.3),transparent)] before:pointer-events-none
+                  max-[768px]:px-[22px] max-[768px]:py-[18px] max-[768px]:hover:translate-y-0">
+                <p className="m-0 flex items-center gap-[7px] text-[0.62rem] font-bold tracking-[0.2em] uppercase text-[#d4af37] opacity-85
+                    before:content-[''] before:inline-block before:w-[7px] before:h-[7px] before:rounded-full before:bg-[#4ade80] before:shadow-[0_0_6px_rgba(74,222,128,0.7)] before:shrink-0 before:[animation:livePulse_2s_ease-in-out_infinite]">Today&apos;s Cosmic Snapshot</p>
+                <strong className="block text-base font-bold text-[#f0e6d0] leading-[1.3]">Favorable energies are rising</strong>
               </div>
             </div>
 
-            <div className="split-copy">
+            <div className="flex flex-col gap-0 max-[768px]:order-1 max-[768px]:text-center">
               <p className="section-kicker">Personalized Spiritual Insights</p>
               <h2 className="section-title">Your Personalized Spiritual Dashboard</h2>
-              <p className="section-body">
+              <p className="section-body !mb-6 max-[768px]:text-center">
                 Once you create your birth profile, VedAstraa generates insights
                 tailored specifically to you.
               </p>
-              <ul className="feature-list feature-list-columns">
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-2.5 mt-[1.6rem] mb-8
+                  min-[769px]:max-[1064px]:gap-x-4 min-[769px]:max-[1064px]:gap-y-2
+                  max-[768px]:gap-x-5 max-[768px]:gap-y-2 max-[768px]:w-fit
+                  max-[420px]:grid-cols-1 max-[420px]:gap-2 max-[420px]:mx-auto max-[420px]:w-auto">
                 {dashboardItems.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item} className="relative pl-[1.7rem] text-white
+                      before:content-[''] before:absolute before:left-0 before:top-[0.55rem] before:w-[10px] before:h-[10px] before:rounded-full
+                      before:[background:linear-gradient(135deg,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c)] before:shadow-[0_0_0_5px_rgba(228,175,86,0.08)]">{item}</li>
                 ))}
               </ul>
-              <a href="#" className="btn btn-primary">
+              <a href="#" className="btn btn-primary max-[768px]:self-stretch max-[768px]:text-center max-[768px]:justify-center max-[768px]:w-full">
                 Create My Profile
               </a>
             </div>
