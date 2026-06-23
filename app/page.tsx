@@ -920,28 +920,42 @@ export default function Home() {
 
         </section>
 
-      <section className="trust-section">
-          <div className="section-shell">
+      <section className="py-20 max-[768px]:after:content-[''] max-[768px]:after:block max-[768px]:after:relative max-[768px]:after:z-[3] max-[768px]:after:w-12 max-[768px]:after:h-1 max-[768px]:after:mx-auto max-[768px]:after:-mt-7 max-[768px]:after:rounded-sm max-[768px]:after:bg-[rgba(212,175,55,0.3)]">
+          <div className="relative z-2 max-w-[1200px] mx-auto px-6 max-[768px]:px-0">
             <FadeIn>
-              <p className="trust-heading">
+              <p className="text-center text-[clamp(1.15rem,2.5vw,1.55rem)] font-semibold text-[#e8d5a3] tracking-[0.02em] leading-[1.55] m-0 mb-12 max-[768px]:px-5 max-[768px]:mb-8">
                 Trusted by thousands seeking clarity and spiritual guidance
               </p>
             </FadeIn>
-            <div className="trust-grid">
+            <div className="grid grid-cols-4 gap-5 min-[769px]:max-[1064px]:grid-cols-2
+                max-[768px]:flex max-[768px]:flex-row max-[768px]:overflow-x-scroll max-[768px]:gap-3.5 max-[768px]:pt-4 max-[768px]:pb-10 max-[768px]:px-[14vw]
+                max-[768px]:[scroll-snap-type:x_mandatory] max-[768px]:[-webkit-overflow-scrolling:touch] max-[768px]:[scrollbar-width:none] max-[768px]:[-ms-overflow-style:none] max-[768px]:[&::-webkit-scrollbar]:hidden
+                max-[768px]:[perspective:1100px] max-[768px]:[perspective-origin:50%_50%] max-[768px]:[scroll-behavior:smooth]
+                max-[768px]:after:content-[''] max-[768px]:after:flex-[0_0_14vw] max-[768px]:after:pointer-events-none">
               {trustItems.map((item) => (
-                <FadeIn key={item.title}>
-                  <article className="trust-card">
+                <FadeIn
+                  key={item.title}
+                  className="max-[768px]:[scroll-snap-align:center] max-[768px]:flex-[0_0_72vw] max-[768px]:max-w-[290px] max-[768px]:[transform-origin:center_center]
+                    max-[768px]:[animation:skiper-enter_linear_both,skiper-exit_linear_both] max-[768px]:[animation-timeline:view(inline),view(inline)] max-[768px]:[animation-range:entry_0%_entry_60%,exit_40%_exit_100%]"
+                >
+                  <article className="group relative rounded-[18px] overflow-hidden min-h-[340px] cursor-default border border-white/[0.07]
+                      shadow-[0_2px_12px_rgba(0,0,0,0.4),0_8px_32px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.06)]
+                      transition-[transform,box-shadow,border-color] duration-[380ms] ease-[cubic-bezier(0.23,1,0.32,1)]
+                      hover:-translate-y-2 hover:scale-[1.01] hover:border-[rgba(212,175,55,0.25)]
+                      hover:shadow-[0_4px_16px_rgba(0,0,0,0.5),0_20px_56px_rgba(0,0,0,0.6),0_0_0_1px_rgba(212,175,55,0.12),inset_0_1px_0_rgba(255,255,255,0.1)]
+                      max-[768px]:min-h-[300px] max-[768px]:w-full max-[768px]:transition-shadow max-[768px]:duration-300 max-[768px]:hover:translate-y-0 max-[768px]:hover:scale-100">
                     <div
-                      className="trust-card-bg"
+                      className="absolute inset-0 bg-cover bg-center transition-transform duration-[550ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.07] max-[768px]:group-hover:scale-100"
                       style={{ backgroundImage: `url(${item.image})` }}
                       aria-hidden="true"
                     />
-                    <div className="trust-card-content">
-                      <div className="trust-icon" aria-hidden="true">
+                    <div className="absolute inset-0 z-1 rounded-[inherit] pointer-events-none [background:radial-gradient(ellipse_at_50%_100%,rgba(6,4,18,0.82)_0%,transparent_75%),linear-gradient(to_top,rgba(6,4,18,0.97)_0%,rgba(6,4,18,0.65)_45%,rgba(6,4,18,0.1)_100%)]" aria-hidden="true" />
+                    <div className="relative z-2 flex flex-col justify-end min-h-[340px] p-[24px_22px] box-border">
+                      <div className="inline-flex items-center justify-center w-[46px] h-[46px] rounded-xl bg-[rgba(212,175,55,0.1)] border border-[rgba(212,175,55,0.38)] text-[#d4af37] text-[0.62rem] font-extrabold tracking-[0.08em] mb-3.5 backdrop-blur-[10px] [backdrop-filter:blur(10px)_saturate(1.4)] self-start shrink-0 shadow-[inset_0_1px_0_rgba(212,175,55,0.15),0_2px_8px_rgba(0,0,0,0.3)]" aria-hidden="true">
                         {item.icon}
                       </div>
-                      <h3>{item.title}</h3>
-                      <p>{item.description}</p>
+                      <h3 className="m-0 mb-2 text-[1.05rem] font-bold text-[#f5ead8] tracking-[0.015em] leading-[1.3] [text-shadow:0_1px_6px_rgba(0,0,0,0.5)]">{item.title}</h3>
+                      <p className="m-0 text-[0.82rem] text-[rgba(232,213,163,0.7)] leading-[1.65]">{item.description}</p>
                     </div>
                   </article>
                 </FadeIn>
