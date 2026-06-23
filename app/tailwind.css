@@ -126,6 +126,21 @@
   }
 }
 
+@keyframes ringPulse {
+  0%, 100% { opacity: 0.5; transform: translate(-50%, -55%) scale(1); }
+  50%       { opacity: 1;   transform: translate(-50%, -55%) scale(1.04); }
+}
+
+@keyframes sagePulse {
+  0%, 100% { opacity: 0.75; transform: translate(-50%, -50%) scaleY(1); }
+  50%       { opacity: 0.95; transform: translate(-50%, -50%) scaleY(1.04); }
+}
+
+@keyframes particleFloat1 {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
+
 @keyframes skiper-exit {
   from {
     transform: rotateY(0deg) scale(1);

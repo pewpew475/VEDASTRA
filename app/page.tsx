@@ -323,75 +323,75 @@ function CourseIcon({ icon, label }: { icon: string; label: string }) {
     case "zodiac-wheel":
       return (
         <svg viewBox="0 0 24 24" role="img" aria-label={label} fill="none">
-          <circle cx="12" cy="12" r="8.5" className="academy-icon-stroke" />
-          <circle cx="12" cy="12" r="4.25" className="academy-icon-stroke academy-icon-fade" />
-          <path d="M12 3.5v17M3.5 12h17M6.2 6.2l11.6 11.6M17.8 6.2L6.2 17.8" className="academy-icon-stroke academy-icon-fade" />
-          <circle cx="12" cy="12" r="1.25" className="academy-icon-fill" />
+          <circle cx="12" cy="12" r="8.5" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <circle cx="12" cy="12" r="4.25" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
+          <path d="M12 3.5v17M3.5 12h17M6.2 6.2l11.6 11.6M17.8 6.2L6.2 17.8" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
+          <circle cx="12" cy="12" r="1.25" className="fill-[#d4af37]" />
         </svg>
       );
     case "numerology":
       return (
         <svg viewBox="0 0 24 24" role="img" aria-label={label} fill="none">
-          <path d="M12 3l2.6 5.4L21 9.2l-4.6 4.2 1.2 6.4L12 17l-5.6 2.8 1.2-6.4L3 9.2l6.4-.8L12 3Z" className="academy-icon-stroke" />
-          <path d="M9.35 14.2c1.1-1.3 2.3-2.65 5.3-5.45" className="academy-icon-stroke academy-icon-fade" />
-          <path d="M9.2 9.5h2.5v5.3" className="academy-icon-stroke" />
+          <path d="M12 3l2.6 5.4L21 9.2l-4.6 4.2 1.2 6.4L12 17l-5.6 2.8 1.2-6.4L3 9.2l6.4-.8L12 3Z" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <path d="M9.35 14.2c1.1-1.3 2.3-2.65 5.3-5.45" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
+          <path d="M9.2 9.5h2.5v5.3" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
         </svg>
       );
     case "tarot-card":
       return (
         <svg viewBox="0 0 24 24" role="img" aria-label={label} fill="none">
-          <rect x="5" y="3.5" width="14" height="17" rx="2.5" className="academy-icon-stroke" />
-          <path d="M12 7.5l1.35 2.7 3 .45-2.15 2.1.5 3-2.7-1.45-2.7 1.45.5-3-2.15-2.1 3-.45L12 7.5Z" className="academy-icon-stroke academy-icon-fade" />
-          <path d="M8.2 18h7.6" className="academy-icon-stroke academy-icon-fade" />
+          <rect x="5" y="3.5" width="14" height="17" rx="2.5" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <path d="M12 7.5l1.35 2.7 3 .45-2.15 2.1.5 3-2.7-1.45-2.7 1.45.5-3-2.15-2.1 3-.45L12 7.5Z" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
+          <path d="M8.2 18h7.6" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
         </svg>
       );
     case "vastu-grid":
       return (
         <svg viewBox="0 0 24 24" role="img" aria-label={label} fill="none">
-          <rect x="4" y="4" width="16" height="16" rx="1.5" className="academy-icon-stroke" />
-          <path d="M9.33 4v16M14.67 4v16M4 9.33h16M4 14.67h16" className="academy-icon-stroke academy-icon-fade" />
-          <path d="M4 4l16 16M20 4L4 20" className="academy-icon-stroke academy-icon-fade" />
+          <rect x="4" y="4" width="16" height="16" rx="1.5" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <path d="M9.33 4v16M14.67 4v16M4 9.33h16M4 14.67h16" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
+          <path d="M4 4l16 16M20 4L4 20" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
         </svg>
       );
     case "lotus-healing":
       return (
         <svg viewBox="0 0 24 24" role="img" aria-label={label} fill="none">
-          <path d="M12 7.2c1.5-2 3.1-2.95 4.8-3.2.1 2.55-.8 4.65-2.9 6.05" className="academy-icon-stroke" />
-          <path d="M12 7.2c-1.5-2-3.1-2.95-4.8-3.2-.1 2.55.8 4.65 2.9 6.05" className="academy-icon-stroke" />
-          <path d="M12 8.1c2.45-1.35 4.95-.95 6.8.85-1.55 2.25-3.8 3.35-6.8 3.35-3 0-5.25-1.1-6.8-3.35 1.85-1.8 4.35-2.2 6.8-.85Z" className="academy-icon-stroke academy-icon-fade" />
-          <path d="M8 15.4c1.05 1.65 2.4 2.6 4 2.6s2.95-.95 4-2.6" className="academy-icon-stroke" />
-          <path d="M12 12.3v5.7" className="academy-icon-stroke academy-icon-fade" />
+          <path d="M12 7.2c1.5-2 3.1-2.95 4.8-3.2.1 2.55-.8 4.65-2.9 6.05" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <path d="M12 7.2c-1.5-2-3.1-2.95-4.8-3.2-.1 2.55.8 4.65 2.9 6.05" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <path d="M12 8.1c2.45-1.35 4.95-.95 6.8.85-1.55 2.25-3.8 3.35-6.8 3.35-3 0-5.25-1.1-6.8-3.35 1.85-1.8 4.35-2.2 6.8-.85Z" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
+          <path d="M8 15.4c1.05 1.65 2.4 2.6 4 2.6s2.95-.95 4-2.6" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <path d="M12 12.3v5.7" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
         </svg>
       );
     case "structured-learning":
       return (
         <svg viewBox="0 0 24 24" role="img" aria-label={label} fill="none">
-          <rect x="4" y="5" width="16" height="14" rx="2.5" className="academy-icon-stroke" />
-          <path d="M8 9h8M8 12h8M8 15h5" className="academy-icon-stroke academy-icon-fade" />
+          <rect x="4" y="5" width="16" height="14" rx="2.5" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <path d="M8 9h8M8 12h8M8 15h5" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
         </svg>
       );
     case "live-workshops":
       return (
         <svg viewBox="0 0 24 24" role="img" aria-label={label} fill="none">
-          <rect x="4" y="6" width="10" height="12" rx="2" className="academy-icon-stroke" />
-          <path d="M14 10l5-2v8l-5-2z" className="academy-icon-stroke academy-icon-fade" />
+          <rect x="4" y="6" width="10" height="12" rx="2" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <path d="M14 10l5-2v8l-5-2z" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
         </svg>
       );
     case "certification":
       return (
         <svg viewBox="0 0 24 24" role="img" aria-label={label} fill="none">
-          <circle cx="12" cy="10" r="5" className="academy-icon-stroke" />
-          <path d="M10 14.5l-1 5 3-1.7 3 1.7-1-5" className="academy-icon-stroke academy-icon-fade" />
-          <path d="M10.2 10.2l1.2 1.2 2.5-2.5" className="academy-icon-stroke" />
+          <circle cx="12" cy="10" r="5" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <path d="M10 14.5l-1 5 3-1.7 3 1.7-1-5" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
+          <path d="M10.2 10.2l1.2 1.2 2.5-2.5" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
         </svg>
       );
     case "mentorship":
       return (
         <svg viewBox="0 0 24 24" role="img" aria-label={label} fill="none">
-          <circle cx="9" cy="9" r="3" className="academy-icon-stroke" />
-          <circle cx="16.5" cy="10.5" r="2.5" className="academy-icon-stroke academy-icon-fade" />
-          <path d="M4.5 18c.9-2.65 2.8-4 5.7-4s4.8 1.35 5.7 4" className="academy-icon-stroke" />
-          <path d="M14.5 18c.45-1.55 1.65-2.35 3.6-2.35 1 0 1.8.2 2.4.65" className="academy-icon-stroke academy-icon-fade" />
+          <circle cx="9" cy="9" r="3" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <circle cx="16.5" cy="10.5" r="2.5" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
+          <path d="M4.5 18c.9-2.65 2.8-4 5.7-4s4.8 1.35 5.7 4" className="stroke-[rgba(212,175,55,0.85)] [stroke-width:1.4]" />
+          <path d="M14.5 18c.45-1.55 1.65-2.35 3.6-2.35 1 0 1.8.2 2.4.65" className="stroke-[rgba(212,175,55,0.4)] [stroke-width:1.4]" />
         </svg>
       );
     default:
@@ -970,7 +970,7 @@ export default function Home() {
           </div>
           <div className="relative z-1 max-w-[1200px] mx-auto px-6 max-[768px]:px-4">
             <p className="text-center text-[0.72rem] font-bold tracking-[0.22em] uppercase text-[#d4af37] m-0 mb-3.5 opacity-90">Our Services</p>
-            <h2 className="text-center text-[clamp(1.65rem,3.5vw,2.4rem)] font-bold leading-[1.25] m-0 mb-5 [background:linear-gradient(135deg,#d4af37_0%,#f5ead8_45%,#b8965a_100%)] [background-clip:text] [-webkit-background-clip:text] text-transparent">
+            <h2 className="text-center text-[clamp(1.65rem,3.5vw,2.4rem)] font-bold leading-[1.25] m-0 mb-5 [background-image:linear-gradient(135deg,#d4af37_0%,#f5ead8_45%,#b8965a_100%)] [background-clip:text] [-webkit-background-clip:text] text-transparent">
               Spiritual Guidance for Every Aspect of Life
             </h2>
             <p className="text-center max-w-[640px] mx-auto mb-14 max-[768px]:mb-9 text-[clamp(0.9rem,1.6vw,1rem)] max-[768px]:text-[0.9rem] text-[rgba(220,205,175,0.72)] leading-[1.75]">
@@ -1000,7 +1000,7 @@ export default function Home() {
                     aria-hidden="true"
                   />
                   <div className="flex flex-col flex-1 p-6 pb-7 max-[400px]:p-[18px] max-[400px]:pb-[22px]">
-                    <h3 className="m-0 mb-3 text-[1.15rem] max-[768px]:text-[1.1rem] font-bold leading-[1.3] tracking-[0.01em] [background:linear-gradient(90deg,#d4af37_0%,#f5ead8_55%)] [background-clip:text] [-webkit-background-clip:text] text-transparent">{service.title}</h3>
+                    <h3 className="m-0 mb-3 text-[1.15rem] max-[768px]:text-[1.1rem] font-bold leading-[1.3] tracking-[0.01em] [background-image:linear-gradient(90deg,#d4af37_0%,#f5ead8_55%)] [background-clip:text] [-webkit-background-clip:text] text-transparent">{service.title}</h3>
                     <p className="m-0 mb-6 text-[0.875rem] text-[rgba(210,195,165,0.72)] leading-[1.7] flex-1">{service.description}</p>
                     <a
                       href="#"
@@ -1276,40 +1276,40 @@ export default function Home() {
           </div>
         </section>
 
-      <section className="academy-section" id="courses">
-          <div className="section-shell academy-shell">
-            <div className="academy-ornament academy-ornament-left" aria-hidden="true" />
-            <div className="academy-ornament academy-ornament-right" aria-hidden="true" />
+      <section className="relative pt-[110px] overflow-hidden max-[768px]:pt-16" id="courses">
+          <div className="section-shell relative z-[1] !pb-0">
+            <div className="absolute -top-20 -left-40 w-[480px] h-[480px] rounded-full pointer-events-none z-0 [background:radial-gradient(circle,rgba(88,28,135,0.22)_0%,rgba(55,20,100,0.1)_50%,transparent_75%)]" aria-hidden="true" />
+            <div className="absolute bottom-[10%] -right-40 w-[480px] h-[480px] rounded-full pointer-events-none z-0 [background:radial-gradient(circle,rgba(212,175,55,0.08)_0%,rgba(168,85,247,0.1)_50%,transparent_75%)]" aria-hidden="true" />
 
-            <div className="academy-pregrid-header">
-              <div className="showcase-chip">VedAstraa Courses</div>
-              <div className="academy-journey-header">
-                <p className="academy-overline">Sacred Learning Path</p>
-                <h2 className="academy-journey-title">
+            <div className="relative z-[1] flex flex-col gap-5 w-1/2 pr-12 mb-8 min-[769px]:max-[1064px]:pr-7 min-[769px]:max-[1064px]:mb-6 max-[768px]:w-full max-[768px]:pr-0 max-[768px]:mb-0 max-[768px]:order-2 max-[768px]:pt-8 max-[768px]:pb-4 max-[420px]:pt-6 max-[420px]:pb-3">
+              <div className="inline-flex items-center px-[18px] py-[7px] rounded-[20px] text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[#d4af37] bg-[rgba(212,175,55,0.08)] border border-[rgba(212,175,55,0.28)] w-fit shadow-[0_0_16px_rgba(212,175,55,0.08)]">VedAstraa Courses</div>
+              <div className="flex flex-col gap-3">
+                <p className="text-[0.68rem] font-bold tracking-[0.22em] uppercase text-[rgba(212,175,55,0.7)] m-0">Sacred Learning Path</p>
+                <h2 className="text-[clamp(1.55rem,2.8vw,2.1rem)] font-bold leading-[1.25] tracking-[-0.01em] m-0 [background-image:linear-gradient(135deg,#f5ead8_0%,#d4af37_40%,#f5ead8_100%)] [background-clip:text] [-webkit-background-clip:text] text-transparent">
                   A refined spiritual curriculum designed as a living journey.
                 </h2>
               </div>
             </div>
 
-            <div className="academy-panel">
-              <div className="academy-journey-panel">
-                <div className="academy-timeline" aria-label="VedAstraa Courses timeline">
-                  <span className="academy-timeline-line" aria-hidden="true" />
+            <div className="relative z-[1] grid grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] gap-0 items-stretch max-[768px]:grid-cols-1">
+              <div className="flex flex-col gap-0 pt-0 pr-12 pb-20 pl-0 min-[769px]:max-[1064px]:pr-7 max-[768px]:order-3 max-[768px]:pr-0 max-[768px]:pb-16">
+                <div className="relative flex flex-col gap-[18px]" aria-label="VedAstraa Courses timeline">
+                  <span className="absolute left-5 top-5 bottom-5 w-px [background:linear-gradient(to_bottom,transparent_0%,rgba(212,175,55,0.35)_8%,rgba(212,175,55,0.35)_92%,transparent_100%)] pointer-events-none z-0 max-[768px]:left-[19px]" aria-hidden="true" />
                   {academyJourney.slice(0, 5).map((course, index) => (
-                    <article key={course.title} className="academy-course">
+                    <article key={course.title} className="group relative rounded-2xl overflow-hidden z-[1] cursor-default [background:linear-gradient(145deg,rgba(24,18,58,0.88)_0%,rgba(14,10,36,0.95)_100%)] border border-[rgba(255,255,255,0.065)] shadow-[0_2px_12px_rgba(0,0,0,0.4),0_8px_28px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.04)] [transition:border-color_0.38s_ease,box-shadow_0.38s_ease,transform_0.38s_cubic-bezier(0.23,1,0.32,1)] min-[769px]:hover:border-[rgba(212,175,55,0.22)] min-[769px]:hover:translate-x-1 min-[769px]:hover:shadow-[0_0_0_1px_rgba(212,175,55,0.1),0_6px_28px_rgba(0,0,0,0.5),0_14px_48px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.06)] after:content-[''] after:absolute after:inset-0 after:z-[1] after:[background:linear-gradient(100deg,rgba(12,8,30,0.95)_0%,rgba(12,8,30,0.88)_50%,rgba(12,8,30,0.65)_100%)] after:pointer-events-none">
                       <div
-                        className="academy-course-bg bw"
+                        className="absolute inset-0 bg-cover bg-center z-0 [transition:transform_0.55s_cubic-bezier(0.23,1,0.32,1),filter_0.55s_ease] grayscale brightness-[0.35] contrast-[1.1] min-[769px]:group-hover:grayscale-[70%] min-[769px]:group-hover:brightness-[0.42] min-[769px]:group-hover:scale-[1.04]"
                         style={{ backgroundImage: `url(${course.image})` }}
                         aria-hidden="true"
                       />
-                      <div className="academy-course-content">
-                        <div className="academy-course-marker" aria-hidden="true">
+                      <div className="relative z-[2] flex items-start gap-4 px-5 py-[18px] max-[768px]:px-4 max-[768px]:py-4 max-[768px]:gap-3">
+                        <div className="relative flex-shrink-0 w-10 h-10 rounded-[10px] flex items-center justify-center bg-[rgba(212,175,55,0.08)] border border-[rgba(212,175,55,0.28)] backdrop-blur-[6px] shadow-[0_0_12px_rgba(212,175,55,0.1),inset_0_1px_0_rgba(255,255,255,0.06)] max-[420px]:w-[34px] max-[420px]:h-[34px] [&_svg]:w-[18px] [&_svg]:h-[18px] max-[420px]:[&_svg]:w-[15px] max-[420px]:[&_svg]:h-[15px]" aria-hidden="true">
                           <CourseIcon icon={course.icon} label={course.title} />
                         </div>
-                        <div className="academy-course-copy">
-                          <span className="academy-course-step">Course {index + 1}</span>
-                          <h3>{course.title}</h3>
-                          <p>{course.detail}</p>
+                        <div className="flex flex-col gap-[5px] flex-1 min-w-0">
+                          <span className="text-[0.6rem] font-bold tracking-[0.2em] uppercase text-[#d4af37] opacity-75">Course {index + 1}</span>
+                          <h3 className="m-0 text-[0.95rem] font-bold text-[#f0e6d0] leading-[1.3] tracking-[0.01em] max-[420px]:text-[0.88rem]">{course.title}</h3>
+                          <p className="m-0 text-[0.78rem] text-[rgba(200,185,155,0.62)] leading-[1.65]">{course.detail}</p>
                         </div>
                       </div>
                     </article>
@@ -1317,32 +1317,32 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="academy-visual-panel">
-                <div className="academy-visual-frame">
-                  <div className="academy-visual-sky" aria-hidden="true">
-                    <span className="academy-visual-ring academy-visual-ring-outer" />
-                    <span className="academy-visual-ring academy-visual-ring-middle" />
-                    <span className="academy-visual-ring academy-visual-ring-inner" />
-                    <span className="academy-visual-grid" />
-                    <span className="academy-visual-sage" />
-                    <span className="academy-visual-particles academy-visual-particles-one" />
-                    <span className="academy-visual-particles academy-visual-particles-two" />
+              <div className="relative h-auto min-h-full flex items-stretch max-[768px]:h-[460px] max-[768px]:order-1 max-[420px]:h-[380px]">
+                <div className="relative w-full min-h-full overflow-hidden flex flex-col justify-end [background:linear-gradient(170deg,rgba(8,5,28,0.92)_0%,rgba(14,8,40,0.98)_100%)] border-l border-[rgba(255,255,255,0.05)] max-[768px]:border-l-0 max-[768px]:border-b">
+                  <div className="absolute inset-0 flex items-center justify-center z-0" aria-hidden="true">
+                    <span className="absolute rounded-full border -translate-x-1/2 -translate-y-[55%] left-1/2 top-[45%] w-[440px] h-[440px] border-[rgba(168,85,247,0.1)] [animation:ringPulse_8s_ease-in-out_infinite] min-[769px]:max-[1064px]:w-[320px] min-[769px]:max-[1064px]:h-[320px] max-[768px]:w-[280px] max-[768px]:h-[280px]" />
+                    <span className="absolute rounded-full border -translate-x-1/2 -translate-y-[55%] left-1/2 top-[45%] w-[310px] h-[310px] border-[rgba(212,175,55,0.1)] [animation:ringPulse_8s_ease-in-out_1.5s_infinite] min-[769px]:max-[1064px]:w-[220px] min-[769px]:max-[1064px]:h-[220px] max-[768px]:w-[190px] max-[768px]:h-[190px]" />
+                    <span className="absolute rounded-full border -translate-x-1/2 -translate-y-[55%] left-1/2 top-[45%] w-[190px] h-[190px] border-[rgba(236,72,153,0.1)] [animation:ringPulse_8s_ease-in-out_3s_infinite] min-[769px]:max-[1064px]:w-[130px] min-[769px]:max-[1064px]:h-[130px] max-[768px]:w-[110px] max-[768px]:h-[110px]" />
+                    <span className="absolute bottom-0 left-0 right-0 h-[55%] [background-image:linear-gradient(rgba(168,85,247,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(168,85,247,0.07)_1px,transparent_1px)] [background-size:40px_40px] [mask-image:linear-gradient(to_top,rgba(0,0,0,0.6)_0%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_top,rgba(0,0,0,0.6)_0%,transparent_100%)]" />
+                    <span className="absolute left-1/2 top-[40%] -translate-x-1/2 -translate-y-1/2 w-[120px] h-[200px] [background:linear-gradient(170deg,rgba(240,230,210,0.55)_0%,rgba(212,175,55,0.22)_30%,rgba(148,60,60,0.35)_65%,rgba(100,30,50,0.45)_100%)] rounded-[50%_50%_45%_45%/60%_60%_40%_40%] blur-[8px] [animation:sagePulse_6s_ease-in-out_infinite] shadow-[0_-20px_60px_rgba(240,230,210,0.15),0_0_40px_rgba(212,175,55,0.12),inset_0_-20px_40px_rgba(148,60,60,0.25)] max-[768px]:w-[90px] max-[768px]:h-[150px] max-[768px]:top-[42%]" />
+                    <span className="absolute w-full h-full pointer-events-none [background-image:radial-gradient(circle_1.5px_at_30%_30%,rgba(212,175,55,0.7)_0%,transparent_100%),radial-gradient(circle_1px_at_70%_20%,rgba(212,175,55,0.5)_0%,transparent_100%),radial-gradient(circle_1px_at_55%_65%,rgba(255,255,255,0.4)_0%,transparent_100%),radial-gradient(circle_1.5px_at_20%_70%,rgba(168,85,247,0.5)_0%,transparent_100%),radial-gradient(circle_1px_at_80%_75%,rgba(236,72,153,0.4)_0%,transparent_100%)] [animation:particleFloat1_12s_ease-in-out_infinite]" />
+                    <span className="absolute w-full h-full pointer-events-none [background-image:radial-gradient(circle_1px_at_45%_15%,rgba(255,255,255,0.5)_0%,transparent_100%),radial-gradient(circle_1.5px_at_85%_40%,rgba(212,175,55,0.55)_0%,transparent_100%),radial-gradient(circle_1px_at_15%_50%,rgba(168,85,247,0.45)_0%,transparent_100%),radial-gradient(circle_1px_at_60%_80%,rgba(212,175,55,0.4)_0%,transparent_100%)] [animation:particleFloat1_15s_ease-in-out_3s_infinite_reverse]" />
                   </div>
 
-                  <div className="academy-copy">
+                  <div className="relative z-[2] px-9 pt-8 pb-10 [background:linear-gradient(to_top,rgba(6,4,18,0.98)_0%,rgba(6,4,18,0.88)_60%,transparent_100%)] flex flex-col gap-0 min-[769px]:max-[1064px]:px-6 min-[769px]:max-[1064px]:pt-6 min-[769px]:max-[1064px]:pb-7 max-[768px]:px-5 max-[768px]:pt-5 max-[768px]:pb-7">
                     <p className="section-kicker">Learn Ancient Spiritual Sciences</p>
-                    <p className="academy-visual-chip">Luxury spiritual courses</p>
-                    <h2 className="section-title">Immersive wisdom for modern seekers.</h2>
-                    <p className="section-body">
+                    <p className="text-[0.62rem] font-bold tracking-[0.22em] uppercase text-[rgba(212,175,55,0.65)] mt-1 mx-0 mb-[14px]">Luxury spiritual courses</p>
+                    <h2 className="section-title text-left! text-[clamp(1.15rem,1.8vw,1.45rem)]! mb-3! max-[768px]:text-[1.1rem]!">Immersive wisdom for modern seekers.</h2>
+                    <p className="section-body text-[0.8rem] mb-5! max-w-full max-[768px]:hidden">
                       Enter a carefully structured learning space where timeless
                       sciences, live guidance, and contemplative practice come
                       together in a polished online course experience.
                     </p>
 
-                    <div className="academy-feature-badges">
+                    <div className="grid grid-cols-2 gap-2 mb-6 min-[769px]:max-[1064px]:gap-[7px] max-[768px]:gap-[6px] max-[768px]:mb-4 max-[420px]:grid-cols-1">
                       {academyFeatures.map((feature) => (
-                        <div key={feature.title} className="academy-feature-badge">
-                          <span className="academy-feature-icon" aria-hidden="true">
+                        <div key={feature.title} className="flex items-center gap-[9px] px-3 py-[9px] rounded-[10px] text-[0.72rem] font-semibold text-[rgba(225,210,175,0.82)] tracking-[0.01em] bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.07)] backdrop-blur-[6px] transition-[border-color,background] duration-300 hover:border-[rgba(212,175,55,0.2)] hover:bg-[rgba(212,175,55,0.05)] min-[769px]:max-[1064px]:text-[0.68rem] min-[769px]:max-[1064px]:px-[10px] min-[769px]:max-[1064px]:py-2 max-[768px]:text-[0.66rem] max-[768px]:px-[9px] max-[768px]:py-[7px] max-[768px]:gap-[7px]">
+                          <span className="flex items-center justify-center w-[22px] h-[22px] flex-shrink-0 text-[#d4af37] [&_svg]:w-4 [&_svg]:h-4" aria-hidden="true">
                             <CourseIcon icon={feature.icon} label={feature.title} />
                           </span>
                           <span>{feature.title}</span>
@@ -1350,7 +1350,7 @@ export default function Home() {
                       ))}
                     </div>
 
-                    <a href="#" className="btn btn-primary academy-cta">
+                    <a href="#" className="btn btn-primary self-start max-[768px]:w-full max-[768px]:self-stretch max-[768px]:text-center max-[768px]:justify-center">
                       Explore Courses
                     </a>
                   </div>
