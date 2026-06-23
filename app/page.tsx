@@ -1360,11 +1360,11 @@ export default function Home() {
           </div>
         </section>
 
-      <section className="tools-section" id="tools">
-          <div className="section-shell">
+      <section className="relative pt-[100px] pb-[110px] overflow-hidden before:content-[''] before:absolute before:inset-0 before:z-0 before:pointer-events-none before:[background:radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(88,28,135,0.16)_0%,transparent_65%),radial-gradient(ellipse_40%_40%_at_90%_100%,rgba(212,175,55,0.06)_0%,transparent_60%)] max-[768px]:pt-16 max-[768px]:pb-[72px]" id="tools">
+          <div className="section-shell relative z-[1]">
             <p className="section-kicker">Astrology Tools</p>
             <h2 className="section-title">Free Astrology Tools</h2>
-            <p className="section-intro">
+            <p className="section-intro text-center mb-12! max-[768px]:mb-8!">
               Explore powerful tools to gain quick insights into your destiny.
             </p>
             <AstrologyToolsContainer />
